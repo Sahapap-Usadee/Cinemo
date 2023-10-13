@@ -8,10 +8,9 @@
 import Foundation
 struct Constants {
     enum Text {
-    }
-
-    enum Title {
-        static let ksBreakingNews = "ksBreakingNews"
+        static let viewMore = "viewMore"
+        static let cinemo = "cinemo"
+        static let movieFinder = "movieFinder"
     }
 
     enum Button {

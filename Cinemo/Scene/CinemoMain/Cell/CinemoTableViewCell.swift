@@ -29,11 +29,12 @@ extension CinemoTableViewCell: Themes {
         backgroundColor = .clear
         contentView.backgroundColor = .clear
         cardView.setThemeView(backgroundColor: themeManager.colors.card, roundType: .roundDefault)
+        movieImageView.setThemeView(roundType: .roundDefault)
         titleLabels.forEach {
             switch $0.tag {
-            case 0: $0.setThemeLabel(font: self.themeManager.fonts.subHeader, textColor: self.themeManager.colors.title)
+            case 0: $0.setThemeLabel(font: self.themeManager.fonts.subHeader, textColor: self.themeManager.colors.headerTitle)
             case 1: $0.setThemeLabel(font: self.themeManager.fonts.header, textColor: self.themeManager.colors.title)
-            case 2: $0.setThemeLabel(font: self.themeManager.fonts.title, textColor: self.themeManager.colors.title)
+            case 2: $0.setThemeLabel(font: self.themeManager.fonts.dataTitle, textColor: self.themeManager.colors.headerTitle)
             case 3: $0.setThemeLabel(font: self.themeManager.fonts.title, textColor: self.themeManager.colors.subTitle)
             default: break
             }
@@ -44,12 +45,13 @@ extension CinemoTableViewCell: Themes {
 extension CinemoTableViewCell: UserInterface {
     private func onUpdated() {
         guard let dataModel = viewModel?.dataModel else { return }
+        movieImageView.setImageFromURL(url: dataModel.posterURL)
         titleLabels.forEach {
             switch $0.tag {
             case 0: $0.text = dataModel.genre
             case 1: $0.text = dataModel.title
             case 2: $0.text = dataModel.date
-            case 3: $0.text = "View more >"
+            case 3: $0.text = Constants.Text.viewMore.localized()
             default: break
             }
         }

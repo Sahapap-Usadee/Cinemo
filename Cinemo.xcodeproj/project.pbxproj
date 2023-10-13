@@ -42,6 +42,12 @@
 		3D266A6A2AD92DC00024C523 /* CinemoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A692AD92DC00024C523 /* CinemoCellModel.swift */; };
 		3D266A6C2AD92EDC0024C523 /* CinemoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A6B2AD92EDC0024C523 /* CinemoCellViewModel.swift */; };
 		3D266A6E2AD931B30024C523 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A6D2AD931B30024C523 /* UITableView+Extension.swift */; };
+		3D266A712AD93B440024C523 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3D266A702AD93B440024C523 /* Kingfisher */; };
+		3D266A732AD93B740024C523 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A722AD93B740024C523 /* UIImageView+Extension.swift */; };
+		3D266A772AD9417F0024C523 /* CinemoheaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A752AD9417F0024C523 /* CinemoheaderTableViewCell.swift */; };
+		3D266A782AD9417F0024C523 /* CinemoheaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A762AD9417F0024C523 /* CinemoheaderTableViewCell.xib */; };
+		3D266A7A2AD941A40024C523 /* CinemoHeaderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A792AD941A40024C523 /* CinemoHeaderCellViewModel.swift */; };
+		3D266A7C2AD941E80024C523 /* CinemoHeaderCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A7B2AD941E80024C523 /* CinemoHeaderCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +104,11 @@
 		3D266A692AD92DC00024C523 /* CinemoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoCellModel.swift; sourceTree = "<group>"; };
 		3D266A6B2AD92EDC0024C523 /* CinemoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoCellViewModel.swift; sourceTree = "<group>"; };
 		3D266A6D2AD931B30024C523 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		3D266A722AD93B740024C523 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		3D266A752AD9417F0024C523 /* CinemoheaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoheaderTableViewCell.swift; sourceTree = "<group>"; };
+		3D266A762AD9417F0024C523 /* CinemoheaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CinemoheaderTableViewCell.xib; sourceTree = "<group>"; };
+		3D266A792AD941A40024C523 /* CinemoHeaderCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoHeaderCellViewModel.swift; sourceTree = "<group>"; };
+		3D266A7B2AD941E80024C523 /* CinemoHeaderCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoHeaderCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D266A712AD93B440024C523 /* Kingfisher in Frameworks */,
 				3D266A5F2AD922950024C523 /* Hue in Frameworks */,
 				3D266A3E2AD903C40024C523 /* Localize_Swift in Frameworks */,
 				3D266A442AD908960024C523 /* Alamofire in Frameworks */,
@@ -208,6 +220,7 @@
 				3D266A652AD92AFD0024C523 /* UIView+Extension.swift */,
 				3D266A672AD92BB60024C523 /* Label+Extension.swift */,
 				3D266A6D2AD931B30024C523 /* UITableView+Extension.swift */,
+				3D266A722AD93B740024C523 /* UIImageView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -290,12 +303,24 @@
 		3D266A602AD925A50024C523 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				3D266A742AD941550024C523 /* Header */,
 				3D266A612AD926BB0024C523 /* CinemoTableViewCell.swift */,
 				3D266A622AD926BB0024C523 /* CinemoTableViewCell.xib */,
 				3D266A692AD92DC00024C523 /* CinemoCellModel.swift */,
 				3D266A6B2AD92EDC0024C523 /* CinemoCellViewModel.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		3D266A742AD941550024C523 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				3D266A752AD9417F0024C523 /* CinemoheaderTableViewCell.swift */,
+				3D266A762AD9417F0024C523 /* CinemoheaderTableViewCell.xib */,
+				3D266A792AD941A40024C523 /* CinemoHeaderCellViewModel.swift */,
+				3D266A7B2AD941E80024C523 /* CinemoHeaderCellModel.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +344,7 @@
 				3D266A3D2AD903C40024C523 /* Localize_Swift */,
 				3D266A432AD908960024C523 /* Alamofire */,
 				3D266A5E2AD922950024C523 /* Hue */,
+				3D266A702AD93B440024C523 /* Kingfisher */,
 			);
 			productName = Cinemo;
 			productReference = 3D2669F82AD8F6670024C523 /* Cinemo.app */;
@@ -397,6 +423,7 @@
 				3D266A3C2AD903C40024C523 /* XCRemoteSwiftPackageReference "Localize-Swift" */,
 				3D266A422AD908960024C523 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				3D266A5D2AD922950024C523 /* XCRemoteSwiftPackageReference "Hue" */,
+				3D266A6F2AD93B440024C523 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 3D2669F92AD8F6670024C523 /* Products */;
 			projectDirPath = "";
@@ -414,6 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D266A782AD9417F0024C523 /* CinemoheaderTableViewCell.xib in Resources */,
 				3D266A082AD8F6690024C523 /* LaunchScreen.storyboard in Resources */,
 				3D266A3B2AD900760024C523 /* Localizable.xcstrings in Resources */,
 				3D266A2E2AD8F9F50024C523 /* Configuration.plist in Resources */,
@@ -477,16 +505,20 @@
 				3D266A342AD8FBD10024C523 /* Bundle+Extension.swift in Sources */,
 				3D2669FC2AD8F6670024C523 /* AppDelegate.swift in Sources */,
 				3D266A4D2AD90B800024C523 /* CinemoRouter.swift in Sources */,
+				3D266A7A2AD941A40024C523 /* CinemoHeaderCellViewModel.swift in Sources */,
+				3D266A7C2AD941E80024C523 /* CinemoHeaderCellModel.swift in Sources */,
 				3D266A4F2AD90E5C0024C523 /* CinemoClient.swift in Sources */,
 				3D266A662AD92AFD0024C523 /* UIView+Extension.swift in Sources */,
 				3D2669FE2AD8F6670024C523 /* SceneDelegate.swift in Sources */,
 				3D266A312AD8FB340024C523 /* CinemoAPI.swift in Sources */,
 				3D266A632AD926BB0024C523 /* CinemoTableViewCell.swift in Sources */,
 				3D266A6E2AD931B30024C523 /* UITableView+Extension.swift in Sources */,
+				3D266A732AD93B740024C523 /* UIImageView+Extension.swift in Sources */,
 				3D266A682AD92BB60024C523 /* Label+Extension.swift in Sources */,
 				3D266A5C2AD922250024C523 /* ThemeFonts.swift in Sources */,
 				3D266A6C2AD92EDC0024C523 /* CinemoCellViewModel.swift in Sources */,
 				3D266A482AD909430024C523 /* Protocol+Extension.swift in Sources */,
+				3D266A772AD9417F0024C523 /* CinemoheaderTableViewCell.swift in Sources */,
 				3D266A372AD8FC540024C523 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -876,6 +908,14 @@
 				minimumVersion = 5.0.1;
 			};
 		};
+		3D266A6F2AD93B440024C523 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -893,6 +933,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3D266A5D2AD922950024C523 /* XCRemoteSwiftPackageReference "Hue" */;
 			productName = Hue;
+		};
+		3D266A702AD93B440024C523 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D266A6F2AD93B440024C523 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

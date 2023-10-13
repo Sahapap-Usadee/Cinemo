@@ -39,6 +39,7 @@ struct ThemeColors {
         }
     }
 
+
     var title: UIColor {
         switch theme {
         case .defaultTheme: return UIColor(hex: "#000000")
@@ -46,10 +47,17 @@ struct ThemeColors {
         }
     }
 
+    var headerTitle: UIColor {
+        switch theme {
+        case .defaultTheme: return UIColor(hex: "#5E5E5E")
+        default: return UIColor(hex: "#5E5E5E")
+        }
+    }
+
     var subTitle: UIColor {
         switch theme {
-        case .defaultTheme: return UIColor(hex: "#bdc3c7")
-        default: return UIColor(hex: "#bdc3c7")
+        case .defaultTheme: return UIColor(hex: "#9F9FA7")
+        default: return UIColor(hex: "#9F9FA7")
         }
     }
 }

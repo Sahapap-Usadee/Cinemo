@@ -64,6 +64,7 @@ extension CinemoMainController: UserInterface {
     private func initTableView() {
         tableView.setThemeTableView()
         tableView.register(CinemoTableViewCell.self)
+        tableView.register(CinemoheaderTableViewCell.self)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.scrollIndicatorInsets = tableView.contentInset
@@ -71,6 +72,17 @@ extension CinemoMainController: UserInterface {
 }
 
 extension CinemoMainController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        switch viewModel.sectionType(section: section) {
+        case .movieList:
+            let cell: CinemoheaderTableViewCell = tableView.dequeueReusableHeaderFooterView()
+            cell.viewModel = .init(model: .init(title: Constants.Text.movieFinder.localized()))
+            return cell
+        case .none:
+            return UIView()
+        }
+    }
+
     func numberOfSections(in _: UITableView) -> Int {
         viewModel.numberOfSection()
     }
