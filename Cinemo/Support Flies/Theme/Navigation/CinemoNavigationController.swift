@@ -17,6 +17,7 @@ class CinemoNavigationController: UINavigationController {
         delegate = self
         interactivePopGestureRecognizer?.delegate = self
         if let navBar = navigationBar as? CinemoNavigatorBar {
+            navBar.initView()
             navBar.actionDelegate = self
         }
     }
@@ -40,6 +41,7 @@ extension CinemoNavigationController: UINavigationControllerDelegate {
         willShow viewController: UIViewController,
         animated: Bool
     ) {
+        self.setTitle(title: Constants.Text.cinemo.localized())
         // print("---- navigationController willShow \(viewController) \(animated)")
     }
 

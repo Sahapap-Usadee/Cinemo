@@ -76,6 +76,13 @@ extension CinemoViewModel: Logic {
         }
         return model
     }
+
+    func getHeaderTableTitle() -> String {
+        switch self.viewType {
+        case .movieList: return Constants.Text.movieFinder.localized()
+        case .favorites: return Constants.Text.myFavorite.localized()
+        }
+    }
 }
 
 extension CinemoViewModel {

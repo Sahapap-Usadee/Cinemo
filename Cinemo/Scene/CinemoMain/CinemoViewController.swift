@@ -21,9 +21,13 @@ class CinemoViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        initNavigation()
-        self.tableView.reloadWithoutAnimation()
         viewModel.fetchData()
+        self.tableView.reloadWithoutAnimation()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        initNavigation()
     }
 
     private let themeManager = ThemeManager.shared.currentTheme
@@ -89,9 +93,9 @@ extension CinemoViewController: UserInterface {
     private func initNavigation() {
         switch viewModel.viewType {
         case .movieList:
-            NavigationBarManager.configure(title: Constants.Text.cinemo.localized(), rightNavBar: .favorite, on: self)
+            NavigationBarManager.configure(rightNavBar: .favorite, on: self)
         case .favorites:
-            NavigationBarManager.configure(title: Constants.Text.favorite.localized(), rightNavBar: .none, on: self)
+            NavigationBarManager.configure(rightNavBar: .none, on: self)
         }
     }
 }
@@ -109,7 +113,7 @@ extension CinemoViewController: UITableViewDataSource {
         switch viewModel.sectionType(section: section) {
         case .movieList:
             let cell: CinemoheaderTableViewCell = tableView.dequeueReusableHeaderFooterView()
-            cell.viewModel = .init(model: .init(title: Constants.Text.movieFinder.localized()))
+            cell.viewModel = .init(model: .init(title: self.viewModel.getHeaderTableTitle()))
             return cell
         case .none:
             return UIView()

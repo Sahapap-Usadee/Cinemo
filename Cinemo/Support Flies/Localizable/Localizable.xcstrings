@@ -35,23 +35,6 @@
         }
       }
     },
-    "favorite" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Favorite"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Favorite"
-          }
-        }
-      }
-    },
     "hello" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -82,6 +65,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ภาพยนตร์"
+          }
+        }
+      }
+    },
+    "myFavorite" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My Favorite"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My Favorite"
           }
         }
       }

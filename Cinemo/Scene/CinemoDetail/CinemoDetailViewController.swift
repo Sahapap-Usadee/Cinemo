@@ -81,7 +81,7 @@ extension CinemoDetailViewController: Service {
 
 extension CinemoDetailViewController: UserInterface {
     private func updateUIWithData(data: CinemoDetailModel) {
-        self.movieImageView.setImageFromURL(url: data.posterURL, resize: .scaleAspectFit)
+        self.movieImageView.setImageFromURL(url: data.posterURL)
         titleLabels.forEach {
             switch $0.tag {
             case 0: $0.text = data.genre
