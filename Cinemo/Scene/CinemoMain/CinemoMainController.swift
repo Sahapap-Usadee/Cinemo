@@ -13,10 +13,11 @@ class CinemoMainController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.applyTheme()
+        applyTheme()
         bindViewModel()
-        self.initTableView()
+        initTableView()
         initRefreshTableView()
+        initNavigation()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -82,6 +83,10 @@ extension CinemoMainController: UserInterface {
     private func initRefreshTableView() {
         refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
         tableView.refreshControl = refreshControl
+    }
+
+    private func initNavigation() {
+        NavigationBarManager.configure(title: Constants.Text.cinemo.localized(), rightNavBar: .favorite, on: self)
     }
 }
 

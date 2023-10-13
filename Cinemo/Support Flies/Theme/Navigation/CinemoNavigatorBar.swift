@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol KSNavigatorBarDelegate: AnyObject {
+protocol CinemoNavigatorBarDelegate: AnyObject {
     func didSelectFavoriteButton()
 }
 
@@ -28,11 +28,9 @@ class CinemoNavigatorBar: UINavigationBar {
         initView()
     }
 
-    // MARK: Internal
-
     // MARK: Theme
 
-    weak var actionDelegate: KSNavigatorBarDelegate?
+    weak var actionDelegate: CinemoNavigatorBarDelegate?
 
     lazy var favoriteButton: UIButton = {
         let button = UIButton(type: .custom)
@@ -78,7 +76,7 @@ extension CinemoNavigatorBar {
     func initView() {
         setBackButtonColor()
         let fontColor = themeManager.colors.titleOnTint
-        let font = themeManager.fonts.header
+        let font = themeManager.fonts.navbar
 
         if #available(iOS 13.0, *) {
             let appearance = UINavigationBarAppearance()

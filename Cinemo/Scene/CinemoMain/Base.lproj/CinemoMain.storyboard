@@ -40,12 +40,12 @@
             </objects>
             <point key="canvasLocation" x="895.41984732824426" y="3.5211267605633805"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Cinemo Navigation Controller-->
         <scene sceneID="b2L-wc-ADQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UI4-yx-o1d" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UI4-yx-o1d" customClass="CinemoNavigationController" customModule="Cinemo" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8IX-iV-qed">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8IX-iV-qed" customClass="CinemoNavigatorBar" customModule="Cinemo" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
