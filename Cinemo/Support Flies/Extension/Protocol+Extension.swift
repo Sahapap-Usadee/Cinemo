@@ -37,14 +37,6 @@ protocol AlertPresentation {}
 
 protocol ViewControllerPresentation {}
 
-enum TabbarMenu {
-    case home
-    case account
-    case trade
-    case research
-    case more
-}
-
 protocol ViewInstantiation {
     static var identifier: String { get }
     static var nib: UINib { get }

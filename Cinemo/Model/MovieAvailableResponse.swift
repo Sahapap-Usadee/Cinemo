@@ -9,11 +9,11 @@ import Foundation
 
 // MARK: - MovieAvailableResponse
 struct MovieAvailableResponse: Codable {
-    let movies: [Movie]
+    let movies: [MovieAvailable]
 }
 
 // MARK: - Movie
-struct Movie: Codable {
+struct MovieAvailable: Codable {
     let id: Int
     let movieCode: [String]?
     let titleEn, titleTh: String
