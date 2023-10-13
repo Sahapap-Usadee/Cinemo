@@ -60,6 +60,7 @@
 		3D266A952AD95F610024C523 /* CinemoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A942AD95F610024C523 /* CinemoDetailViewModel.swift */; };
 		3D266A972AD960F20024C523 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A962AD960F20024C523 /* UIViewController+Extension.swift */; };
 		3D266A992AD96A5F0024C523 /* CinemoDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A982AD96A5F0024C523 /* CinemoDetailModel.swift */; };
+		3D266A9B2AD976A20024C523 /* FavoriteMovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A9A2AD976A20024C523 /* FavoriteMovieManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,7 @@
 		3D266A942AD95F610024C523 /* CinemoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoDetailViewModel.swift; sourceTree = "<group>"; };
 		3D266A962AD960F20024C523 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		3D266A982AD96A5F0024C523 /* CinemoDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoDetailModel.swift; sourceTree = "<group>"; };
+		3D266A9A2AD976A20024C523 /* FavoriteMovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMovieManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 				3D266A322AD8FBB50024C523 /* Extension */,
 				3D266A382AD8FF280024C523 /* Plist */,
 				3D266A7F2AD9461C0024C523 /* AppCaller.swift */,
+				3D266A9A2AD976A20024C523 /* FavoriteMovieManager.swift */,
 			);
 			path = "Support Flies";
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 				3D266A5C2AD922250024C523 /* ThemeFonts.swift in Sources */,
 				3D266A6C2AD92EDC0024C523 /* CinemoCellViewModel.swift in Sources */,
 				3D266A482AD909430024C523 /* Protocol+Extension.swift in Sources */,
+				3D266A9B2AD976A20024C523 /* FavoriteMovieManager.swift in Sources */,
 				3D266A772AD9417F0024C523 /* CinemoheaderTableViewCell.swift in Sources */,
 				3D266A372AD8FC540024C523 /* Constants.swift in Sources */,
 			);
