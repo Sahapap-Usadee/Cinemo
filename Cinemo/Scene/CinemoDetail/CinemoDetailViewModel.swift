@@ -10,22 +10,24 @@ import Combine
 class CinemoDetailViewModel {
     // Outputs for the View
     @Published private(set) var dataModel: CinemoDetailModel
+    @Published private(set) var isFavorite: Bool
     var cancellables = Set<AnyCancellable>()
+    private let favoriteManager = FavoriteMovieManager.shared
 
     init(data: CinemoDetailModel) {
         self.dataModel = data
+        self.isFavorite = favoriteManager.isFavorite(movieID: data.id)
     }
 }
 
-// extension CinemoMainViewModel:  {
-//    func fetchData() {
-//        CinemoClient.requestMovieAvailable { [weak self] result in
-//            switch result {
-//            case .success(let data):
-//                self?.dataModel = data
-//            case .failure(let apiError):
-//                self?.error = apiError
-//            }
-//        }
-//    }
-// }
+extension CinemoDetailViewModel: Logic {
+    func toggleFavorite() {
+        if isFavorite {
+            favoriteManager.removeFavorite(movieID: dataModel.id)
+            isFavorite = false
+        } else {
+            favoriteManager.addFavorite(movieID: dataModel.id)
+            isFavorite = true
+        }
+    }
+}

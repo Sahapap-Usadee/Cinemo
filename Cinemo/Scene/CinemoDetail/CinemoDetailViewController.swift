@@ -27,7 +27,9 @@ class CinemoDetailViewController: UIViewController {
     @IBOutlet weak var movieImageView: UIImageView!
 
     @IBAction func touchFavorite(_ sender: UIButton) {
+        viewModel.toggleFavorite()
     }
+
     required init(viewModel: CinemoDetailViewModel) {
         self.viewModel = viewModel
         super.init(nibName: CinemoDetailViewController.identifier, bundle: nil)
@@ -63,6 +65,17 @@ extension CinemoDetailViewController: Service {
                 self?.updateUIWithData(data: data)
             }
             .store(in: &viewModel.cancellables)
+
+        viewModel.$isFavorite
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] favorite in
+                if favorite {
+                    self?.setViewRemoveFavorite()
+                } else {
+                    self?.setViewAddFavorite()
+                }
+            }
+            .store(in: &viewModel.cancellables)
     }
 }
 
@@ -76,7 +89,14 @@ extension CinemoDetailViewController: UserInterface {
             case 2: $0.text = data.synopsis
             default: break
             }
-            favoriteButton.setAddFavoriteButton()
         }
+    }
+
+    private func setViewAddFavorite() {
+        favoriteButton.setAddFavoriteButton()
+    }
+
+    private func setViewRemoveFavorite() {
+        favoriteButton.setRemoveFavoriteButton()
     }
 }
