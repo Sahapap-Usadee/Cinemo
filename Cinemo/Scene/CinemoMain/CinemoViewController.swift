@@ -10,6 +10,7 @@ import Haptica
 class CinemoViewController: UIViewController {
     var viewModel: CinemoViewModel = .init()
     private let refreshControl = UIRefreshControl()
+    @IBOutlet weak var searchMovieBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +18,7 @@ class CinemoViewController: UIViewController {
         bindViewModel()
         initTableView()
         initRefreshTableView()
+        initSearchBar()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -83,6 +85,7 @@ extension CinemoViewController: UserInterface {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.scrollIndicatorInsets = tableView.contentInset
+        tableView.keyboardDismissMode = .onDrag
     }
 
     private func initRefreshTableView() {
@@ -97,6 +100,18 @@ extension CinemoViewController: UserInterface {
         case .favorites:
             NavigationBarManager.configure(rightNavBar: .none, on: self)
         }
+    }
+
+    private func initSearchBar() {
+        switch viewModel.viewType {
+        case .movieList:
+            searchMovieBar.isHidden = false
+        case .favorites:
+            searchMovieBar.isHidden = true
+        }
+
+        searchMovieBar.setThemeSearchBar()
+        searchMovieBar.delegate = self
     }
 }
 
@@ -138,5 +153,20 @@ extension CinemoViewController: UITableViewDataSource {
 
     func tableView(_: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.numberOfRowsInSection(in: section)
+    }
+}
+
+extension CinemoViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.search(for: searchText)
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        viewModel.resetSearch()
+        searchBar.resignFirstResponder()
+    }
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
     }
 }

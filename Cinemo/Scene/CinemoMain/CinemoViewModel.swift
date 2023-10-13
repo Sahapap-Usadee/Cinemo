@@ -14,8 +14,10 @@ class CinemoViewModel {
         case favorites
     }
     // Outputs for the View
-    @Published private(set) var dataModel: MovieAvailableResponse?
+    @Published private(set) var dataModel: [MovieAvailable]?
     @Published private(set) var error: Error?
+    private var currentSearchText: String?
+    private var allMovies: [MovieAvailable] = [] // to store all movies
     var cancellables = Set<AnyCancellable>()
     enum Section {
         case movieList
@@ -34,7 +36,12 @@ extension CinemoViewModel: Service {
         CinemoClient.requestMovieAvailable { [weak self] result in
             switch result {
             case .success(let data):
-                self?.dataModel = data
+                self?.allMovies = data.movies
+                if let searchText = self?.currentSearchText {
+                    self?.search(for: searchText)
+                } else {
+                    self?.dataModel = data.movies
+                }
             case .failure(let apiError):
                 self?.error = apiError
             }
@@ -46,10 +53,10 @@ extension CinemoViewModel: Logic {
     func getMovielist() -> [MovieAvailable] {
         switch viewType {
         case .movieList:
-            return dataModel?.movies ?? []
+            return dataModel ?? []
         case .favorites:
             let favoriteIDs = FavoriteMovieManager.shared.getAllFavorites()
-            return dataModel?.movies.filter { favoriteIDs.contains($0.id) } ?? []
+            return dataModel?.filter { favoriteIDs.contains($0.id) } ?? []
         }
     }
 
@@ -99,5 +106,20 @@ extension CinemoViewModel {
         case .movieList: return self.getMovielist().count
         case .none: return 0
         }
+    }
+}
+
+extension CinemoViewModel {
+    func search(for text: String) {
+        currentSearchText = text
+        if text.isEmpty {
+            dataModel = allMovies
+        } else {
+            dataModel = allMovies.filter { $0.titleEn.contains(text) || $0.titleTh.contains(text) }
+        }
+    }
+
+    func resetSearch() {
+        dataModel = allMovies
     }
 }

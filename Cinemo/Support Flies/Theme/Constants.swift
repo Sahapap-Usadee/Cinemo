@@ -12,6 +12,7 @@ struct Constants {
         static let cinemo = "cinemo"
         static let movieFinder = "movieFinder"
         static let myFavorite = "myFavorite"
+        static let search = "search"
     }
 
     enum Button {
