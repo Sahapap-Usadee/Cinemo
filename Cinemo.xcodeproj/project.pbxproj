@@ -7,66 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D5CDCD32AD8EE67007F34A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CDCD22AD8EE67007F34A0 /* AppDelegate.swift */; };
-		3D5CDCD52AD8EE67007F34A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CDCD42AD8EE67007F34A0 /* SceneDelegate.swift */; };
-		3D5CDCD72AD8EE67007F34A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CDCD62AD8EE67007F34A0 /* ViewController.swift */; };
-		3D5CDCDA2AD8EE67007F34A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5CDCD82AD8EE67007F34A0 /* Main.storyboard */; };
-		3D5CDCDC2AD8EE69007F34A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5CDCDB2AD8EE69007F34A0 /* Assets.xcassets */; };
-		3D5CDCDF2AD8EE69007F34A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5CDCDD2AD8EE69007F34A0 /* LaunchScreen.storyboard */; };
-		3D5CDCEA2AD8EE69007F34A0 /* CinemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CDCE92AD8EE69007F34A0 /* CinemoTests.swift */; };
-		3D5CDCF42AD8EE69007F34A0 /* CinemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CDCF32AD8EE69007F34A0 /* CinemoUITests.swift */; };
-		3D5CDCF62AD8EE69007F34A0 /* CinemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CDCF52AD8EE69007F34A0 /* CinemoUITestsLaunchTests.swift */; };
+		3D2669FC2AD8F6670024C523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2669FB2AD8F6670024C523 /* AppDelegate.swift */; };
+		3D2669FE2AD8F6670024C523 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2669FD2AD8F6670024C523 /* SceneDelegate.swift */; };
+		3D266A002AD8F6670024C523 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2669FF2AD8F6670024C523 /* ViewController.swift */; };
+		3D266A032AD8F6670024C523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A012AD8F6670024C523 /* Main.storyboard */; };
+		3D266A052AD8F6690024C523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A042AD8F6690024C523 /* Assets.xcassets */; };
+		3D266A082AD8F6690024C523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A062AD8F6690024C523 /* LaunchScreen.storyboard */; };
+		3D266A132AD8F6690024C523 /* CinemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A122AD8F6690024C523 /* CinemoTests.swift */; };
+		3D266A1D2AD8F6690024C523 /* CinemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A1C2AD8F6690024C523 /* CinemoUITests.swift */; };
+		3D266A1F2AD8F6690024C523 /* CinemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A1E2AD8F6690024C523 /* CinemoUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3D5CDCE62AD8EE69007F34A0 /* PBXContainerItemProxy */ = {
+		3D266A0F2AD8F6690024C523 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3D5CDCC72AD8EE67007F34A0 /* Project object */;
+			containerPortal = 3D2669F02AD8F6670024C523 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3D5CDCCE2AD8EE67007F34A0;
+			remoteGlobalIDString = 3D2669F72AD8F6670024C523;
 			remoteInfo = Cinemo;
 		};
-		3D5CDCF02AD8EE69007F34A0 /* PBXContainerItemProxy */ = {
+		3D266A192AD8F6690024C523 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3D5CDCC72AD8EE67007F34A0 /* Project object */;
+			containerPortal = 3D2669F02AD8F6670024C523 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3D5CDCCE2AD8EE67007F34A0;
+			remoteGlobalIDString = 3D2669F72AD8F6670024C523;
 			remoteInfo = Cinemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3D5CDCCF2AD8EE67007F34A0 /* Cinemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D5CDCD22AD8EE67007F34A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D5CDCD42AD8EE67007F34A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D5CDCD62AD8EE67007F34A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3D5CDCD92AD8EE67007F34A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3D5CDCDB2AD8EE69007F34A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3D5CDCDE2AD8EE69007F34A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3D5CDCE02AD8EE69007F34A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D5CDCE52AD8EE69007F34A0 /* CinemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D5CDCE92AD8EE69007F34A0 /* CinemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoTests.swift; sourceTree = "<group>"; };
-		3D5CDCEF2AD8EE69007F34A0 /* CinemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D5CDCF32AD8EE69007F34A0 /* CinemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoUITests.swift; sourceTree = "<group>"; };
-		3D5CDCF52AD8EE69007F34A0 /* CinemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3D2669F82AD8F6670024C523 /* Cinemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2669FB2AD8F6670024C523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D2669FD2AD8F6670024C523 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D2669FF2AD8F6670024C523 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D266A022AD8F6670024C523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D266A042AD8F6690024C523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D266A072AD8F6690024C523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D266A092AD8F6690024C523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D266A0E2AD8F6690024C523 /* CinemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D266A122AD8F6690024C523 /* CinemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoTests.swift; sourceTree = "<group>"; };
+		3D266A182AD8F6690024C523 /* CinemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D266A1C2AD8F6690024C523 /* CinemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoUITests.swift; sourceTree = "<group>"; };
+		3D266A1E2AD8F6690024C523 /* CinemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3D5CDCCC2AD8EE67007F34A0 /* Frameworks */ = {
+		3D2669F52AD8F6670024C523 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D5CDCE22AD8EE69007F34A0 /* Frameworks */ = {
+		3D266A0B2AD8F6690024C523 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D5CDCEC2AD8EE69007F34A0 /* Frameworks */ = {
+		3D266A152AD8F6690024C523 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,53 +76,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D5CDCC62AD8EE67007F34A0 = {
+		3D2669EF2AD8F6670024C523 = {
 			isa = PBXGroup;
 			children = (
-				3D5CDCD12AD8EE67007F34A0 /* Cinemo */,
-				3D5CDCE82AD8EE69007F34A0 /* CinemoTests */,
-				3D5CDCF22AD8EE69007F34A0 /* CinemoUITests */,
-				3D5CDCD02AD8EE67007F34A0 /* Products */,
+				3D2669FA2AD8F6670024C523 /* Cinemo */,
+				3D266A112AD8F6690024C523 /* CinemoTests */,
+				3D266A1B2AD8F6690024C523 /* CinemoUITests */,
+				3D2669F92AD8F6670024C523 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3D5CDCD02AD8EE67007F34A0 /* Products */ = {
+		3D2669F92AD8F6670024C523 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D5CDCCF2AD8EE67007F34A0 /* Cinemo.app */,
-				3D5CDCE52AD8EE69007F34A0 /* CinemoTests.xctest */,
-				3D5CDCEF2AD8EE69007F34A0 /* CinemoUITests.xctest */,
+				3D2669F82AD8F6670024C523 /* Cinemo.app */,
+				3D266A0E2AD8F6690024C523 /* CinemoTests.xctest */,
+				3D266A182AD8F6690024C523 /* CinemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3D5CDCD12AD8EE67007F34A0 /* Cinemo */ = {
+		3D2669FA2AD8F6670024C523 /* Cinemo */ = {
 			isa = PBXGroup;
 			children = (
-				3D5CDCD22AD8EE67007F34A0 /* AppDelegate.swift */,
-				3D5CDCD42AD8EE67007F34A0 /* SceneDelegate.swift */,
-				3D5CDCD62AD8EE67007F34A0 /* ViewController.swift */,
-				3D5CDCD82AD8EE67007F34A0 /* Main.storyboard */,
-				3D5CDCDB2AD8EE69007F34A0 /* Assets.xcassets */,
-				3D5CDCDD2AD8EE69007F34A0 /* LaunchScreen.storyboard */,
-				3D5CDCE02AD8EE69007F34A0 /* Info.plist */,
+				3D2669FB2AD8F6670024C523 /* AppDelegate.swift */,
+				3D2669FD2AD8F6670024C523 /* SceneDelegate.swift */,
+				3D2669FF2AD8F6670024C523 /* ViewController.swift */,
+				3D266A012AD8F6670024C523 /* Main.storyboard */,
+				3D266A042AD8F6690024C523 /* Assets.xcassets */,
+				3D266A062AD8F6690024C523 /* LaunchScreen.storyboard */,
+				3D266A092AD8F6690024C523 /* Info.plist */,
 			);
 			path = Cinemo;
 			sourceTree = "<group>";
 		};
-		3D5CDCE82AD8EE69007F34A0 /* CinemoTests */ = {
+		3D266A112AD8F6690024C523 /* CinemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				3D5CDCE92AD8EE69007F34A0 /* CinemoTests.swift */,
+				3D266A122AD8F6690024C523 /* CinemoTests.swift */,
 			);
 			path = CinemoTests;
 			sourceTree = "<group>";
 		};
-		3D5CDCF22AD8EE69007F34A0 /* CinemoUITests */ = {
+		3D266A1B2AD8F6690024C523 /* CinemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3D5CDCF32AD8EE69007F34A0 /* CinemoUITests.swift */,
-				3D5CDCF52AD8EE69007F34A0 /* CinemoUITestsLaunchTests.swift */,
+				3D266A1C2AD8F6690024C523 /* CinemoUITests.swift */,
+				3D266A1E2AD8F6690024C523 /* CinemoUITestsLaunchTests.swift */,
 			);
 			path = CinemoUITests;
 			sourceTree = "<group>";
@@ -130,13 +130,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3D5CDCCE2AD8EE67007F34A0 /* Cinemo */ = {
+		3D2669F72AD8F6670024C523 /* Cinemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D5CDCF92AD8EE69007F34A0 /* Build configuration list for PBXNativeTarget "Cinemo" */;
+			buildConfigurationList = 3D266A222AD8F6690024C523 /* Build configuration list for PBXNativeTarget "Cinemo" */;
 			buildPhases = (
-				3D5CDCCB2AD8EE67007F34A0 /* Sources */,
-				3D5CDCCC2AD8EE67007F34A0 /* Frameworks */,
-				3D5CDCCD2AD8EE67007F34A0 /* Resources */,
+				3D2669F42AD8F6670024C523 /* Sources */,
+				3D2669F52AD8F6670024C523 /* Frameworks */,
+				3D2669F62AD8F6670024C523 /* Resources */,
+				3D266A2B2AD8F7220024C523 /* Run Script SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -144,69 +145,69 @@
 			);
 			name = Cinemo;
 			productName = Cinemo;
-			productReference = 3D5CDCCF2AD8EE67007F34A0 /* Cinemo.app */;
+			productReference = 3D2669F82AD8F6670024C523 /* Cinemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3D5CDCE42AD8EE69007F34A0 /* CinemoTests */ = {
+		3D266A0D2AD8F6690024C523 /* CinemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D5CDCFC2AD8EE69007F34A0 /* Build configuration list for PBXNativeTarget "CinemoTests" */;
+			buildConfigurationList = 3D266A252AD8F6690024C523 /* Build configuration list for PBXNativeTarget "CinemoTests" */;
 			buildPhases = (
-				3D5CDCE12AD8EE69007F34A0 /* Sources */,
-				3D5CDCE22AD8EE69007F34A0 /* Frameworks */,
-				3D5CDCE32AD8EE69007F34A0 /* Resources */,
+				3D266A0A2AD8F6690024C523 /* Sources */,
+				3D266A0B2AD8F6690024C523 /* Frameworks */,
+				3D266A0C2AD8F6690024C523 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3D5CDCE72AD8EE69007F34A0 /* PBXTargetDependency */,
+				3D266A102AD8F6690024C523 /* PBXTargetDependency */,
 			);
 			name = CinemoTests;
 			productName = CinemoTests;
-			productReference = 3D5CDCE52AD8EE69007F34A0 /* CinemoTests.xctest */;
+			productReference = 3D266A0E2AD8F6690024C523 /* CinemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3D5CDCEE2AD8EE69007F34A0 /* CinemoUITests */ = {
+		3D266A172AD8F6690024C523 /* CinemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D5CDCFF2AD8EE69007F34A0 /* Build configuration list for PBXNativeTarget "CinemoUITests" */;
+			buildConfigurationList = 3D266A282AD8F6690024C523 /* Build configuration list for PBXNativeTarget "CinemoUITests" */;
 			buildPhases = (
-				3D5CDCEB2AD8EE69007F34A0 /* Sources */,
-				3D5CDCEC2AD8EE69007F34A0 /* Frameworks */,
-				3D5CDCED2AD8EE69007F34A0 /* Resources */,
+				3D266A142AD8F6690024C523 /* Sources */,
+				3D266A152AD8F6690024C523 /* Frameworks */,
+				3D266A162AD8F6690024C523 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3D5CDCF12AD8EE69007F34A0 /* PBXTargetDependency */,
+				3D266A1A2AD8F6690024C523 /* PBXTargetDependency */,
 			);
 			name = CinemoUITests;
 			productName = CinemoUITests;
-			productReference = 3D5CDCEF2AD8EE69007F34A0 /* CinemoUITests.xctest */;
+			productReference = 3D266A182AD8F6690024C523 /* CinemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3D5CDCC72AD8EE67007F34A0 /* Project object */ = {
+		3D2669F02AD8F6670024C523 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					3D5CDCCE2AD8EE67007F34A0 = {
+					3D2669F72AD8F6670024C523 = {
 						CreatedOnToolsVersion = 15.0;
 					};
-					3D5CDCE42AD8EE69007F34A0 = {
+					3D266A0D2AD8F6690024C523 = {
 						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 3D5CDCCE2AD8EE67007F34A0;
+						TestTargetID = 3D2669F72AD8F6670024C523;
 					};
-					3D5CDCEE2AD8EE69007F34A0 = {
+					3D266A172AD8F6690024C523 = {
 						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 3D5CDCCE2AD8EE67007F34A0;
+						TestTargetID = 3D2669F72AD8F6670024C523;
 					};
 				};
 			};
-			buildConfigurationList = 3D5CDCCA2AD8EE67007F34A0 /* Build configuration list for PBXProject "Cinemo" */;
+			buildConfigurationList = 3D2669F32AD8F6670024C523 /* Build configuration list for PBXProject "Cinemo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,37 +215,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 3D5CDCC62AD8EE67007F34A0;
-			productRefGroup = 3D5CDCD02AD8EE67007F34A0 /* Products */;
+			mainGroup = 3D2669EF2AD8F6670024C523;
+			productRefGroup = 3D2669F92AD8F6670024C523 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D5CDCCE2AD8EE67007F34A0 /* Cinemo */,
-				3D5CDCE42AD8EE69007F34A0 /* CinemoTests */,
-				3D5CDCEE2AD8EE69007F34A0 /* CinemoUITests */,
+				3D2669F72AD8F6670024C523 /* Cinemo */,
+				3D266A0D2AD8F6690024C523 /* CinemoTests */,
+				3D266A172AD8F6690024C523 /* CinemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3D5CDCCD2AD8EE67007F34A0 /* Resources */ = {
+		3D2669F62AD8F6670024C523 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D5CDCDF2AD8EE69007F34A0 /* LaunchScreen.storyboard in Resources */,
-				3D5CDCDC2AD8EE69007F34A0 /* Assets.xcassets in Resources */,
-				3D5CDCDA2AD8EE67007F34A0 /* Main.storyboard in Resources */,
+				3D266A082AD8F6690024C523 /* LaunchScreen.storyboard in Resources */,
+				3D266A052AD8F6690024C523 /* Assets.xcassets in Resources */,
+				3D266A032AD8F6670024C523 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D5CDCE32AD8EE69007F34A0 /* Resources */ = {
+		3D266A0C2AD8F6690024C523 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D5CDCED2AD8EE69007F34A0 /* Resources */ = {
+		3D266A162AD8F6690024C523 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,62 +254,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D266A2B2AD8F7220024C523 /* Run Script SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect --format\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		3D5CDCCB2AD8EE67007F34A0 /* Sources */ = {
+		3D2669F42AD8F6670024C523 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D5CDCD72AD8EE67007F34A0 /* ViewController.swift in Sources */,
-				3D5CDCD32AD8EE67007F34A0 /* AppDelegate.swift in Sources */,
-				3D5CDCD52AD8EE67007F34A0 /* SceneDelegate.swift in Sources */,
+				3D266A002AD8F6670024C523 /* ViewController.swift in Sources */,
+				3D2669FC2AD8F6670024C523 /* AppDelegate.swift in Sources */,
+				3D2669FE2AD8F6670024C523 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D5CDCE12AD8EE69007F34A0 /* Sources */ = {
+		3D266A0A2AD8F6690024C523 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D5CDCEA2AD8EE69007F34A0 /* CinemoTests.swift in Sources */,
+				3D266A132AD8F6690024C523 /* CinemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D5CDCEB2AD8EE69007F34A0 /* Sources */ = {
+		3D266A142AD8F6690024C523 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D5CDCF42AD8EE69007F34A0 /* CinemoUITests.swift in Sources */,
-				3D5CDCF62AD8EE69007F34A0 /* CinemoUITestsLaunchTests.swift in Sources */,
+				3D266A1D2AD8F6690024C523 /* CinemoUITests.swift in Sources */,
+				3D266A1F2AD8F6690024C523 /* CinemoUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3D5CDCE72AD8EE69007F34A0 /* PBXTargetDependency */ = {
+		3D266A102AD8F6690024C523 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3D5CDCCE2AD8EE67007F34A0 /* Cinemo */;
-			targetProxy = 3D5CDCE62AD8EE69007F34A0 /* PBXContainerItemProxy */;
+			target = 3D2669F72AD8F6670024C523 /* Cinemo */;
+			targetProxy = 3D266A0F2AD8F6690024C523 /* PBXContainerItemProxy */;
 		};
-		3D5CDCF12AD8EE69007F34A0 /* PBXTargetDependency */ = {
+		3D266A1A2AD8F6690024C523 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3D5CDCCE2AD8EE67007F34A0 /* Cinemo */;
-			targetProxy = 3D5CDCF02AD8EE69007F34A0 /* PBXContainerItemProxy */;
+			target = 3D2669F72AD8F6670024C523 /* Cinemo */;
+			targetProxy = 3D266A192AD8F6690024C523 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3D5CDCD82AD8EE67007F34A0 /* Main.storyboard */ = {
+		3D266A012AD8F6670024C523 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3D5CDCD92AD8EE67007F34A0 /* Base */,
+				3D266A022AD8F6670024C523 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3D5CDCDD2AD8EE69007F34A0 /* LaunchScreen.storyboard */ = {
+		3D266A062AD8F6690024C523 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3D5CDCDE2AD8EE69007F34A0 /* Base */,
+				3D266A072AD8F6690024C523 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,7 +338,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3D5CDCF72AD8EE69007F34A0 /* Debug */ = {
+		3D266A202AD8F6690024C523 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -379,7 +401,7 @@
 			};
 			name = Debug;
 		};
-		3D5CDCF82AD8EE69007F34A0 /* Release */ = {
+		3D266A212AD8F6690024C523 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -435,65 +457,67 @@
 			};
 			name = Release;
 		};
-		3D5CDCFA2AD8EE69007F34A0 /* Debug */ = {
+		3D266A232AD8F6690024C523 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cinemo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Cinemo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ter.Cinemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahapap.Cinemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3D5CDCFB2AD8EE69007F34A0 /* Release */ = {
+		3D266A242AD8F6690024C523 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cinemo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Cinemo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ter.Cinemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahapap.Cinemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		3D5CDCFD2AD8EE69007F34A0 /* Debug */ = {
+		3D266A262AD8F6690024C523 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -503,7 +527,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ter.CinemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahapap.CinemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -512,7 +536,7 @@
 			};
 			name = Debug;
 		};
-		3D5CDCFE2AD8EE69007F34A0 /* Release */ = {
+		3D266A272AD8F6690024C523 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -522,7 +546,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ter.CinemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahapap.CinemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -531,7 +555,7 @@
 			};
 			name = Release;
 		};
-		3D5CDD002AD8EE69007F34A0 /* Debug */ = {
+		3D266A292AD8F6690024C523 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -539,7 +563,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ter.CinemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahapap.CinemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -548,7 +572,7 @@
 			};
 			name = Debug;
 		};
-		3D5CDD012AD8EE69007F34A0 /* Release */ = {
+		3D266A2A2AD8F6690024C523 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -556,7 +580,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ter.CinemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahapap.CinemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -568,43 +592,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D5CDCCA2AD8EE67007F34A0 /* Build configuration list for PBXProject "Cinemo" */ = {
+		3D2669F32AD8F6670024C523 /* Build configuration list for PBXProject "Cinemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3D5CDCF72AD8EE69007F34A0 /* Debug */,
-				3D5CDCF82AD8EE69007F34A0 /* Release */,
+				3D266A202AD8F6690024C523 /* Debug */,
+				3D266A212AD8F6690024C523 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D5CDCF92AD8EE69007F34A0 /* Build configuration list for PBXNativeTarget "Cinemo" */ = {
+		3D266A222AD8F6690024C523 /* Build configuration list for PBXNativeTarget "Cinemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3D5CDCFA2AD8EE69007F34A0 /* Debug */,
-				3D5CDCFB2AD8EE69007F34A0 /* Release */,
+				3D266A232AD8F6690024C523 /* Debug */,
+				3D266A242AD8F6690024C523 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D5CDCFC2AD8EE69007F34A0 /* Build configuration list for PBXNativeTarget "CinemoTests" */ = {
+		3D266A252AD8F6690024C523 /* Build configuration list for PBXNativeTarget "CinemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3D5CDCFD2AD8EE69007F34A0 /* Debug */,
-				3D5CDCFE2AD8EE69007F34A0 /* Release */,
+				3D266A262AD8F6690024C523 /* Debug */,
+				3D266A272AD8F6690024C523 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D5CDCFF2AD8EE69007F34A0 /* Build configuration list for PBXNativeTarget "CinemoUITests" */ = {
+		3D266A282AD8F6690024C523 /* Build configuration list for PBXNativeTarget "CinemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3D5CDD002AD8EE69007F34A0 /* Debug */,
-				3D5CDD012AD8EE69007F34A0 /* Release */,
+				3D266A292AD8F6690024C523 /* Debug */,
+				3D266A2A2AD8F6690024C523 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3D5CDCC72AD8EE67007F34A0 /* Project object */;
+	rootObject = 3D2669F02AD8F6670024C523 /* Project object */;
 }
