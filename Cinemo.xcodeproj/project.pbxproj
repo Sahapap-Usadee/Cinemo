@@ -107,14 +107,13 @@
 		3D2669FA2AD8F6670024C523 /* Cinemo */ = {
 			isa = PBXGroup;
 			children = (
-				3D266A2F2AD8FB1E0024C523 /* Router */,
+				3D266A2F2AD8FB1E0024C523 /* Routers */,
 				3D2669FB2AD8F6670024C523 /* AppDelegate.swift */,
 				3D2669FD2AD8F6670024C523 /* SceneDelegate.swift */,
 				3D2669FF2AD8F6670024C523 /* ViewController.swift */,
 				3D266A012AD8F6670024C523 /* Main.storyboard */,
 				3D266A042AD8F6690024C523 /* Assets.xcassets */,
 				3D266A062AD8F6690024C523 /* LaunchScreen.storyboard */,
-				3D266A092AD8F6690024C523 /* Info.plist */,
 				3D266A2C2AD8F9AF0024C523 /* Support Flies */,
 			);
 			path = Cinemo;
@@ -142,17 +141,17 @@
 			children = (
 				3D266A352AD8FC470024C523 /* Theme */,
 				3D266A322AD8FBB50024C523 /* Extension */,
-				3D266A2D2AD8F9F50024C523 /* Configuration.plist */,
+				3D266A382AD8FF280024C523 /* Plist */,
 			);
 			path = "Support Flies";
 			sourceTree = "<group>";
 		};
-		3D266A2F2AD8FB1E0024C523 /* Router */ = {
+		3D266A2F2AD8FB1E0024C523 /* Routers */ = {
 			isa = PBXGroup;
 			children = (
 				3D266A302AD8FB340024C523 /* CinemoAPI.swift */,
 			);
-			path = Router;
+			path = Routers;
 			sourceTree = "<group>";
 		};
 		3D266A322AD8FBB50024C523 /* Extension */ = {
@@ -169,6 +168,15 @@
 				3D266A362AD8FC540024C523 /* Constants.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		3D266A382AD8FF280024C523 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				3D266A2D2AD8F9F50024C523 /* Configuration.plist */,
+				3D266A092AD8F6690024C523 /* Info.plist */,
+			);
+			path = Plist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,7 +524,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Cinemo/Info.plist;
+				INFOPLIST_FILE = "Cinemo/Support Flies/Plist/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -547,7 +555,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Cinemo/Info.plist;
+				INFOPLIST_FILE = "Cinemo/Support Flies/Plist/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
