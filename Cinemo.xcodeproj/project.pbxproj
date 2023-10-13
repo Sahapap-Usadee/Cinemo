@@ -22,6 +22,14 @@
 		3D266A372AD8FC540024C523 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A362AD8FC540024C523 /* Constants.swift */; };
 		3D266A3B2AD900760024C523 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A3A2AD900760024C523 /* Localizable.xcstrings */; };
 		3D266A3E2AD903C40024C523 /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 3D266A3D2AD903C40024C523 /* Localize_Swift */; };
+		3D266A412AD908670024C523 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A402AD908670024C523 /* APIRouter.swift */; };
+		3D266A442AD908960024C523 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3D266A432AD908960024C523 /* Alamofire */; };
+		3D266A462AD908C40024C523 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A452AD908C40024C523 /* Network.swift */; };
+		3D266A482AD909430024C523 /* Protocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A472AD909430024C523 /* Protocol+Extension.swift */; };
+		3D266A4A2AD90A9C0024C523 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A492AD90A9C0024C523 /* APIClient.swift */; };
+		3D266A4D2AD90B800024C523 /* CinemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A4C2AD90B800024C523 /* CinemoRouter.swift */; };
+		3D266A4F2AD90E5C0024C523 /* CinemoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A4E2AD90E5C0024C523 /* CinemoClient.swift */; };
+		3D266A522AD912B80024C523 /* MovieAvailableResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A512AD912B80024C523 /* MovieAvailableResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +68,13 @@
 		3D266A332AD8FBD10024C523 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		3D266A362AD8FC540024C523 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3D266A3A2AD900760024C523 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		3D266A402AD908670024C523 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		3D266A452AD908C40024C523 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		3D266A472AD909430024C523 /* Protocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Protocol+Extension.swift"; sourceTree = "<group>"; };
+		3D266A492AD90A9C0024C523 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		3D266A4C2AD90B800024C523 /* CinemoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoRouter.swift; sourceTree = "<group>"; };
+		3D266A4E2AD90E5C0024C523 /* CinemoClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoClient.swift; sourceTree = "<group>"; };
+		3D266A512AD912B80024C523 /* MovieAvailableResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAvailableResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D266A3E2AD903C40024C523 /* Localize_Swift in Frameworks */,
+				3D266A442AD908960024C523 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +127,7 @@
 		3D2669FA2AD8F6670024C523 /* Cinemo */ = {
 			isa = PBXGroup;
 			children = (
+				3D266A502AD912A50024C523 /* Model */,
 				3D266A2F2AD8FB1E0024C523 /* Routers */,
 				3D2669FB2AD8F6670024C523 /* AppDelegate.swift */,
 				3D2669FD2AD8F6670024C523 /* SceneDelegate.swift */,
@@ -154,7 +171,8 @@
 		3D266A2F2AD8FB1E0024C523 /* Routers */ = {
 			isa = PBXGroup;
 			children = (
-				3D266A302AD8FB340024C523 /* CinemoAPI.swift */,
+				3D266A3F2AD908470024C523 /* API */,
+				3D266A4B2AD90B540024C523 /* Cinemo */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -163,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				3D266A332AD8FBD10024C523 /* Bundle+Extension.swift */,
+				3D266A472AD909430024C523 /* Protocol+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -192,6 +211,34 @@
 			path = Localizable;
 			sourceTree = "<group>";
 		};
+		3D266A3F2AD908470024C523 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3D266A302AD8FB340024C523 /* CinemoAPI.swift */,
+				3D266A402AD908670024C523 /* APIRouter.swift */,
+				3D266A492AD90A9C0024C523 /* APIClient.swift */,
+				3D266A452AD908C40024C523 /* Network.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3D266A4B2AD90B540024C523 /* Cinemo */ = {
+			isa = PBXGroup;
+			children = (
+				3D266A4C2AD90B800024C523 /* CinemoRouter.swift */,
+				3D266A4E2AD90E5C0024C523 /* CinemoClient.swift */,
+			);
+			path = Cinemo;
+			sourceTree = "<group>";
+		};
+		3D266A502AD912A50024C523 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D266A512AD912B80024C523 /* MovieAvailableResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,6 +258,7 @@
 			name = Cinemo;
 			packageProductDependencies = (
 				3D266A3D2AD903C40024C523 /* Localize_Swift */,
+				3D266A432AD908960024C523 /* Alamofire */,
 			);
 			productName = Cinemo;
 			productReference = 3D2669F82AD8F6670024C523 /* Cinemo.app */;
@@ -287,6 +335,7 @@
 			mainGroup = 3D2669EF2AD8F6670024C523;
 			packageReferences = (
 				3D266A3C2AD903C40024C523 /* XCRemoteSwiftPackageReference "Localize-Swift" */,
+				3D266A422AD908960024C523 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 3D2669F92AD8F6670024C523 /* Products */;
 			projectDirPath = "";
@@ -354,11 +403,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D266A522AD912B80024C523 /* MovieAvailableResponse.swift in Sources */,
+				3D266A412AD908670024C523 /* APIRouter.swift in Sources */,
 				3D266A002AD8F6670024C523 /* ViewController.swift in Sources */,
+				3D266A462AD908C40024C523 /* Network.swift in Sources */,
+				3D266A4A2AD90A9C0024C523 /* APIClient.swift in Sources */,
 				3D266A342AD8FBD10024C523 /* Bundle+Extension.swift in Sources */,
 				3D2669FC2AD8F6670024C523 /* AppDelegate.swift in Sources */,
+				3D266A4D2AD90B800024C523 /* CinemoRouter.swift in Sources */,
+				3D266A4F2AD90E5C0024C523 /* CinemoClient.swift in Sources */,
 				3D2669FE2AD8F6670024C523 /* SceneDelegate.swift in Sources */,
 				3D266A312AD8FB340024C523 /* CinemoAPI.swift in Sources */,
+				3D266A482AD909430024C523 /* Protocol+Extension.swift in Sources */,
 				3D266A372AD8FC540024C523 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -732,6 +788,14 @@
 				minimumVersion = 3.2.0;
 			};
 		};
+		3D266A422AD908960024C523 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -739,6 +803,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3D266A3C2AD903C40024C523 /* XCRemoteSwiftPackageReference "Localize-Swift" */;
 			productName = Localize_Swift;
+		};
+		3D266A432AD908960024C523 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D266A422AD908960024C523 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -13,6 +13,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print(CinemoAPI.shared.enviroment)
         self.testLabel.text = "hello".localized()
-        // Do any additional setup after loading the view.
+
+        CinemoClient.requestMovieAvailable() { result in
+            switch result {
+            case .success(let success):
+                print(success)
+            case .failure(let failure):
+                print(failure)
+            }
+        }
     }
 }

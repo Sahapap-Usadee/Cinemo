@@ -4,11 +4,15 @@
 <dict>
 	<key>Release</key>
 	<dict>
+		<key>movie_URL</key>
+		<string>https://www.majorcineplex.com</string>
 		<key>server_env</key>
 		<string>Production Version</string>
 	</dict>
 	<key>Debug</key>
 	<dict>
+		<key>movie_URL</key>
+		<string>https://www.majorcineplex.com</string>
 		<key>server_env</key>
 		<string>Develop Version</string>
 	</dict>
