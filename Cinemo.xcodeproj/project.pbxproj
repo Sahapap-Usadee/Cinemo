@@ -62,6 +62,7 @@
 		3D266A992AD96A5F0024C523 /* CinemoDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A982AD96A5F0024C523 /* CinemoDetailModel.swift */; };
 		3D266A9B2AD976A20024C523 /* FavoriteMovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A9A2AD976A20024C523 /* FavoriteMovieManager.swift */; };
 		3D266A9D2AD990990024C523 /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A9C2AD990990024C523 /* UISearchBar+Extension.swift */; };
+		3D266A9F2AD996C10024C523 /* Formatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A9E2AD996C10024C523 /* Formatter+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		3D266A982AD96A5F0024C523 /* CinemoDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoDetailModel.swift; sourceTree = "<group>"; };
 		3D266A9A2AD976A20024C523 /* FavoriteMovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMovieManager.swift; sourceTree = "<group>"; };
 		3D266A9C2AD990990024C523 /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extension.swift"; sourceTree = "<group>"; };
+		3D266A9E2AD996C10024C523 /* Formatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 				3D266A892AD955A80024C523 /* UIButton+Extension.swift */,
 				3D266A962AD960F20024C523 /* UIViewController+Extension.swift */,
 				3D266A9C2AD990990024C523 /* UISearchBar+Extension.swift */,
+				3D266A9E2AD996C10024C523 /* Formatter+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D266A9F2AD996C10024C523 /* Formatter+Extension.swift in Sources */,
 				3D266A8E2AD95BD80024C523 /* NavigationBarManager.swift in Sources */,
 				3D266A8A2AD955A80024C523 /* UIButton+Extension.swift in Sources */,
 				3D266A972AD960F20024C523 /* UIViewController+Extension.swift in Sources */,

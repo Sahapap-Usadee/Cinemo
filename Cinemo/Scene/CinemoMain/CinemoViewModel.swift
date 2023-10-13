@@ -77,9 +77,9 @@ extension CinemoViewModel: Logic {
         var model: CinemoCellModel =  .init()
         switch Constants.Language.Key(rawValue: Localize.currentLanguage()) {
         case .thai:
-            model = CinemoCellModel(title: data.titleTh, date: data.releaseDate, genre: data.genre, posterURL: data.posterURL)
+            model = CinemoCellModel(title: data.titleTh, date: data.releaseDate.formatDate(), genre: data.genre, posterURL: data.posterURL)
         default:
-            model = CinemoCellModel(title: data.titleEn, date: data.releaseDate, genre: data.genre, posterURL: data.posterURL)
+            model = CinemoCellModel(title: data.titleEn, date: data.releaseDate.formatDate(), genre: data.genre, posterURL: data.posterURL)
         }
         return model
     }
