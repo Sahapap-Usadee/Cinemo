@@ -6,23 +6,30 @@
 //
 
 import UIKit
-
+import Haptica
 class CinemoMainController: UIViewController {
     let viewModel = CinemoMainViewModel()
-
+    private let refreshControl = UIRefreshControl()
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.applyTheme()
         bindViewModel()
         self.initTableView()
+        initRefreshTableView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewModel.fetchData()
     }
+
     private let themeManager = ThemeManager.shared.currentTheme
+
+    @objc
+    func refresh() {
+        viewModel.fetchData()
+    }
     // MARK: Theme
 }
 
@@ -37,6 +44,7 @@ extension CinemoMainController: Service {
         viewModel.$dataModel
             .receive(on: DispatchQueue.main)
             .sink { [weak self] _ in
+                self?.refreshControl.endRefreshing()
                 self?.updateUIWithData()
             }
             .store(in: &viewModel.cancellables)
@@ -45,6 +53,7 @@ extension CinemoMainController: Service {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] error in
                 if let error = error {
+                    self?.refreshControl.endRefreshing()
                     self?.handleError(error)
                 }
             }
@@ -58,7 +67,7 @@ extension CinemoMainController: UserInterface {
     }
 
     private func handleError(_ error: Error) {
-        // Handle the error, e.g., show an alert or an error message on the screen
+        AppCaller().showAlert(message: Constants.Alert.sessionError.localized())
     }
 
     private func initTableView() {
@@ -69,9 +78,21 @@ extension CinemoMainController: UserInterface {
         tableView.dataSource = self
         tableView.scrollIndicatorInsets = tableView.contentInset
     }
+
+    private func initRefreshTableView() {
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+    }
 }
 
-extension CinemoMainController: UITableViewDataSource, UITableViewDelegate {
+extension CinemoMainController: UITableViewDelegate {
+    func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
+        Haptic.impact(.medium).generate()
+        AppCaller().showAlert(message: "test")
+    }
+}
+
+extension CinemoMainController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         switch viewModel.sectionType(section: section) {
         case .movieList:

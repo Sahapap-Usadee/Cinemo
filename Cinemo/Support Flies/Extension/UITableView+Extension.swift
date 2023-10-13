@@ -12,7 +12,7 @@ extension UITableView {
     func setThemeTableView(
         background: UIColor = .clear,
         separator: UITableViewCell.SeparatorStyle = .none,
-        allowsRowSelection: Bool = false
+        allowsRowSelection: Bool = true
     ) {
         if #available(iOS 15.0, *) {
             self.sectionHeaderTopPadding = .zero

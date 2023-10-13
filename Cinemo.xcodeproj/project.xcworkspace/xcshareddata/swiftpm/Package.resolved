@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "haptica",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/efremidze/Haptica",
+      "state" : {
+        "revision" : "e03932406d2f36f10beefd31717730b2c2fa9014",
+        "version" : "3.0.3"
+      }
+    },
+    {
       "identity" : "hue",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zenangst/Hue",

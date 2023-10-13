@@ -35,6 +35,40 @@
         }
       }
     },
+    "ok" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตกลง"
+          }
+        }
+      }
+    },
+    "sessionError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error please try again."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Error please try again."
+          }
+        }
+      }
+    },
     "viewMore" : {
       "extractionState" : "manual",
       "localizations" : {

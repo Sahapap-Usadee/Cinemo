@@ -48,6 +48,8 @@
 		3D266A782AD9417F0024C523 /* CinemoheaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A762AD9417F0024C523 /* CinemoheaderTableViewCell.xib */; };
 		3D266A7A2AD941A40024C523 /* CinemoHeaderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A792AD941A40024C523 /* CinemoHeaderCellViewModel.swift */; };
 		3D266A7C2AD941E80024C523 /* CinemoHeaderCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A7B2AD941E80024C523 /* CinemoHeaderCellModel.swift */; };
+		3D266A802AD9461C0024C523 /* AppCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A7F2AD9461C0024C523 /* AppCaller.swift */; };
+		3D266A832AD948C00024C523 /* Haptica in Frameworks */ = {isa = PBXBuildFile; productRef = 3D266A822AD948C00024C523 /* Haptica */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,7 @@
 		3D266A762AD9417F0024C523 /* CinemoheaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CinemoheaderTableViewCell.xib; sourceTree = "<group>"; };
 		3D266A792AD941A40024C523 /* CinemoHeaderCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoHeaderCellViewModel.swift; sourceTree = "<group>"; };
 		3D266A7B2AD941E80024C523 /* CinemoHeaderCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoHeaderCellModel.swift; sourceTree = "<group>"; };
+		3D266A7F2AD9461C0024C523 /* AppCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 				3D266A712AD93B440024C523 /* Kingfisher in Frameworks */,
 				3D266A5F2AD922950024C523 /* Hue in Frameworks */,
 				3D266A3E2AD903C40024C523 /* Localize_Swift in Frameworks */,
+				3D266A832AD948C00024C523 /* Haptica in Frameworks */,
 				3D266A442AD908960024C523 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +203,7 @@
 				3D266A352AD8FC470024C523 /* Theme */,
 				3D266A322AD8FBB50024C523 /* Extension */,
 				3D266A382AD8FF280024C523 /* Plist */,
+				3D266A7F2AD9461C0024C523 /* AppCaller.swift */,
 			);
 			path = "Support Flies";
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 				3D266A432AD908960024C523 /* Alamofire */,
 				3D266A5E2AD922950024C523 /* Hue */,
 				3D266A702AD93B440024C523 /* Kingfisher */,
+				3D266A822AD948C00024C523 /* Haptica */,
 			);
 			productName = Cinemo;
 			productReference = 3D2669F82AD8F6670024C523 /* Cinemo.app */;
@@ -424,6 +430,7 @@
 				3D266A422AD908960024C523 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				3D266A5D2AD922950024C523 /* XCRemoteSwiftPackageReference "Hue" */,
 				3D266A6F2AD93B440024C523 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				3D266A812AD948C00024C523 /* XCRemoteSwiftPackageReference "Haptica" */,
 			);
 			productRefGroup = 3D2669F92AD8F6670024C523 /* Products */;
 			projectDirPath = "";
@@ -494,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D266A6A2AD92DC00024C523 /* CinemoCellModel.swift in Sources */,
+				3D266A802AD9461C0024C523 /* AppCaller.swift in Sources */,
 				3D266A522AD912B80024C523 /* MovieAvailableResponse.swift in Sources */,
 				3D266A5A2AD922180024C523 /* ThemeColors.swift in Sources */,
 				3D266A412AD908670024C523 /* APIRouter.swift in Sources */,
@@ -916,6 +924,14 @@
 				minimumVersion = 7.9.1;
 			};
 		};
+		3D266A812AD948C00024C523 /* XCRemoteSwiftPackageReference "Haptica" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/efremidze/Haptica";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -938,6 +954,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3D266A6F2AD93B440024C523 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		3D266A822AD948C00024C523 /* Haptica */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D266A812AD948C00024C523 /* XCRemoteSwiftPackageReference "Haptica" */;
+			productName = Haptica;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

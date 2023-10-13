@@ -20,8 +20,6 @@ struct Constants {
     }
 
     enum Alert {
-        static let logoutConfirmation = "logoutConfirmation"
-        static let sessionExpired = "sessionExpired"
         static let sessionError = "sessionError"
     }
 
