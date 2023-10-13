@@ -198,7 +198,6 @@
 				3D266A532AD91B950024C523 /* Scene */,
 				3D2669FB2AD8F6670024C523 /* AppDelegate.swift */,
 				3D2669FD2AD8F6670024C523 /* SceneDelegate.swift */,
-				3D266A042AD8F6690024C523 /* Assets.xcassets */,
 				3D266A062AD8F6690024C523 /* LaunchScreen.storyboard */,
 				3D266A2C2AD8F9AF0024C523 /* Support Flies */,
 			);
@@ -227,6 +226,7 @@
 			children = (
 				3D266A392AD900550024C523 /* Localizable */,
 				3D266A352AD8FC470024C523 /* Theme */,
+				3D266AA02AD999680024C523 /* Assets */,
 				3D266A322AD8FBB50024C523 /* Extension */,
 				3D266A382AD8FF280024C523 /* Plist */,
 				3D266A7F2AD9461C0024C523 /* AppCaller.swift */,
@@ -381,6 +381,14 @@
 				3D266A982AD96A5F0024C523 /* CinemoDetailModel.swift */,
 			);
 			path = CinemoDetail;
+			sourceTree = "<group>";
+		};
+		3D266AA02AD999680024C523 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3D266A042AD8F6690024C523 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
