@@ -7,7 +7,7 @@
 
 import UIKit
 import Haptica
-class CinemoMainController: UIViewController {
+class CinemoController: UIViewController {
     let viewModel = CinemoMainViewModel()
     private let refreshControl = UIRefreshControl()
     @IBOutlet weak var tableView: UITableView!
@@ -34,13 +34,13 @@ class CinemoMainController: UIViewController {
     // MARK: Theme
 }
 
-extension CinemoMainController: Themes {
+extension CinemoController: Themes {
     func applyTheme() {
         view.backgroundColor = themeManager.colors.background
     }
 }
 
-extension CinemoMainController: Service {
+extension CinemoController: Service {
     private func bindViewModel() {
         viewModel.$dataModel
             .receive(on: DispatchQueue.main)
@@ -62,7 +62,7 @@ extension CinemoMainController: Service {
     }
 }
 
-extension CinemoMainController: UserInterface {
+extension CinemoController: UserInterface {
     private func updateUIWithData() {
         self.tableView.reloadWithoutAnimation()
     }
@@ -90,7 +90,7 @@ extension CinemoMainController: UserInterface {
     }
 }
 
-extension CinemoMainController: UITableViewDelegate {
+extension CinemoController: UITableViewDelegate {
     func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
         Haptic.impact(.medium).generate()
         let data = self.viewModel.getMovieDetail(row: indexPath.row)
@@ -98,7 +98,7 @@ extension CinemoMainController: UITableViewDelegate {
     }
 }
 
-extension CinemoMainController: UITableViewDataSource {
+extension CinemoController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         switch viewModel.sectionType(section: section) {
         case .movieList:

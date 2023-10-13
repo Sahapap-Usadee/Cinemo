@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D2669FC2AD8F6670024C523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2669FB2AD8F6670024C523 /* AppDelegate.swift */; };
 		3D2669FE2AD8F6670024C523 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2669FD2AD8F6670024C523 /* SceneDelegate.swift */; };
-		3D266A002AD8F6670024C523 /* CinemoMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2669FF2AD8F6670024C523 /* CinemoMainController.swift */; };
+		3D266A002AD8F6670024C523 /* CinemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2669FF2AD8F6670024C523 /* CinemoController.swift */; };
 		3D266A032AD8F6670024C523 /* CinemoMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A012AD8F6670024C523 /* CinemoMain.storyboard */; };
 		3D266A052AD8F6690024C523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A042AD8F6690024C523 /* Assets.xcassets */; };
 		3D266A082AD8F6690024C523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A062AD8F6690024C523 /* LaunchScreen.storyboard */; };
@@ -84,7 +84,7 @@
 		3D2669F82AD8F6670024C523 /* Cinemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2669FB2AD8F6670024C523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D2669FD2AD8F6670024C523 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D2669FF2AD8F6670024C523 /* CinemoMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoMainController.swift; sourceTree = "<group>"; };
+		3D2669FF2AD8F6670024C523 /* CinemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoController.swift; sourceTree = "<group>"; };
 		3D266A022AD8F6670024C523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CinemoMain.storyboard; sourceTree = "<group>"; };
 		3D266A042AD8F6690024C523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D266A072AD8F6690024C523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -326,7 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				3D266A602AD925A50024C523 /* Cell */,
-				3D2669FF2AD8F6670024C523 /* CinemoMainController.swift */,
+				3D2669FF2AD8F6670024C523 /* CinemoController.swift */,
 				3D266A012AD8F6670024C523 /* CinemoMain.storyboard */,
 				3D266A552AD91C9C0024C523 /* CinemoMainViewModel.swift */,
 			);
@@ -562,7 +562,7 @@
 				3D266A922AD95EE30024C523 /* CinemoDetailViewController.swift in Sources */,
 				3D266A582AD921E00024C523 /* ThemeManager.swift in Sources */,
 				3D266A562AD91C9C0024C523 /* CinemoMainViewModel.swift in Sources */,
-				3D266A002AD8F6670024C523 /* CinemoMainController.swift in Sources */,
+				3D266A002AD8F6670024C523 /* CinemoController.swift in Sources */,
 				3D266A462AD908C40024C523 /* Network.swift in Sources */,
 				3D266A4A2AD90A9C0024C523 /* APIClient.swift in Sources */,
 				3D266A342AD8FBD10024C523 /* Bundle+Extension.swift in Sources */,
