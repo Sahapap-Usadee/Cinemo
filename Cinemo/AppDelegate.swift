@@ -36,5 +36,6 @@ extension AppDelegate {
 
     func setupTheme() {
         Localize.setCurrentLanguage(Constants.Language.Key.english.rawValue)
+        ThemeManager.shared.setTheme(.defaultTheme)
     }
 }
