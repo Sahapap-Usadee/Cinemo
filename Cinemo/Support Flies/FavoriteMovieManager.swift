@@ -45,4 +45,8 @@ extension FavoriteMovieManager: Logic {
     func isFavorite(movieID: Int) -> Bool {
         return favorites.contains(movieID)
     }
+
+    func getAllFavorites() -> [Int] {
+        return favorites
+    }
 }

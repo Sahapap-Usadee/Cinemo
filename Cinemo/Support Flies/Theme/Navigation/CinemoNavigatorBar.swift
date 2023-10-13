@@ -52,7 +52,6 @@ class CinemoNavigatorBar: UINavigationBar {
 extension CinemoNavigatorBar {
     @objc
     func didSelectFavoriteButton() {
-        print("*** didSelectFavoriteButton")
         actionDelegate?.didSelectFavoriteButton()
     }
 }

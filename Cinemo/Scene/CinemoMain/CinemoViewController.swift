@@ -7,8 +7,8 @@
 
 import UIKit
 import Haptica
-class CinemoController: UIViewController {
-    let viewModel = CinemoMainViewModel()
+class CinemoViewController: UIViewController {
+    var viewModel: CinemoViewModel = .init()
     private let refreshControl = UIRefreshControl()
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -17,11 +17,12 @@ class CinemoController: UIViewController {
         bindViewModel()
         initTableView()
         initRefreshTableView()
-        initNavigation()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        initNavigation()
+        self.tableView.reloadWithoutAnimation()
         viewModel.fetchData()
     }
 
@@ -34,13 +35,13 @@ class CinemoController: UIViewController {
     // MARK: Theme
 }
 
-extension CinemoController: Themes {
+extension CinemoViewController: Themes {
     func applyTheme() {
         view.backgroundColor = themeManager.colors.background
     }
 }
 
-extension CinemoController: Service {
+extension CinemoViewController: Service {
     private func bindViewModel() {
         viewModel.$dataModel
             .receive(on: DispatchQueue.main)
@@ -62,7 +63,7 @@ extension CinemoController: Service {
     }
 }
 
-extension CinemoController: UserInterface {
+extension CinemoViewController: UserInterface {
     private func updateUIWithData() {
         self.tableView.reloadWithoutAnimation()
     }
@@ -86,11 +87,16 @@ extension CinemoController: UserInterface {
     }
 
     private func initNavigation() {
-        NavigationBarManager.configure(title: Constants.Text.cinemo.localized(), rightNavBar: .favorite, on: self)
+        switch viewModel.viewType {
+        case .movieList:
+            NavigationBarManager.configure(title: Constants.Text.cinemo.localized(), rightNavBar: .favorite, on: self)
+        case .favorites:
+            NavigationBarManager.configure(title: Constants.Text.favorite.localized(), rightNavBar: .none, on: self)
+        }
     }
 }
 
-extension CinemoController: UITableViewDelegate {
+extension CinemoViewController: UITableViewDelegate {
     func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
         Haptic.impact(.medium).generate()
         let data = self.viewModel.getMovieDetail(row: indexPath.row)
@@ -98,7 +104,7 @@ extension CinemoController: UITableViewDelegate {
     }
 }
 
-extension CinemoController: UITableViewDataSource {
+extension CinemoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         switch viewModel.sectionType(section: section) {
         case .movieList:

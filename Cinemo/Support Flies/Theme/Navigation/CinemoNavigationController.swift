@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Haptica
 // MARK: - KSNavigationController
 
 class CinemoNavigationController: UINavigationController {
@@ -56,6 +56,8 @@ extension CinemoNavigationController: UINavigationControllerDelegate {
 
 extension CinemoNavigationController: CinemoNavigatorBarDelegate {
     func didSelectFavoriteButton() {
+        Haptic.impact(.medium).generate()
+        AppCaller().openFavorite()
     }
 }
 

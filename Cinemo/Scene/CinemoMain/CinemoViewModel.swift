@@ -8,8 +8,11 @@
 import Combine
 import Localize_Swift
 
-
-class CinemoMainViewModel {
+class CinemoViewModel {
+    enum CinemoViewType {
+        case movieList
+        case favorites
+    }
     // Outputs for the View
     @Published private(set) var dataModel: MovieAvailableResponse?
     @Published private(set) var error: Error?
@@ -19,12 +22,14 @@ class CinemoMainViewModel {
         case none
     }
     let sectionList: [Section]
-    init() {
+    let viewType: CinemoViewType
+    init(type: CinemoViewType = .movieList) {
         sectionList = [.movieList]
+        self.viewType = type
     }
 }
 
-extension CinemoMainViewModel: Service {
+extension CinemoViewModel: Service {
     func fetchData() {
         CinemoClient.requestMovieAvailable { [weak self] result in
             switch result {
@@ -37,13 +42,19 @@ extension CinemoMainViewModel: Service {
     }
 }
 
-extension CinemoMainViewModel: Logic {
+extension CinemoViewModel: Logic {
     func getMovielist() -> [MovieAvailable] {
-        dataModel?.movies ?? []
+        switch viewType {
+        case .movieList:
+            return dataModel?.movies ?? []
+        case .favorites:
+            let favoriteIDs = FavoriteMovieManager.shared.getAllFavorites()
+            return dataModel?.movies.filter { favoriteIDs.contains($0.id) } ?? []
+        }
     }
 
     func getMovieDetail(row: Int) -> CinemoDetailModel {
-        guard let data = dataModel?.movies[row]  else { return CinemoDetailModel() }
+        let data = getMovielist()[row]
         var model: CinemoDetailModel =  .init()
         switch Constants.Language.Key(rawValue: Localize.currentLanguage()) {
         case .thai:
@@ -55,7 +66,7 @@ extension CinemoMainViewModel: Logic {
     }
 
     func getModelMovie(row: Int) -> CinemoCellModel {
-        guard let data = dataModel?.movies[row]  else { return CinemoCellModel() }
+        let data = getMovielist()[row]
         var model: CinemoCellModel =  .init()
         switch Constants.Language.Key(rawValue: Localize.currentLanguage()) {
         case .thai:
@@ -67,7 +78,7 @@ extension CinemoMainViewModel: Logic {
     }
 }
 
-extension CinemoMainViewModel {
+extension CinemoViewModel {
     func numberOfSection() -> Int {
         sectionList.count
     }

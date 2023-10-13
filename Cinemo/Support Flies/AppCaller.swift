@@ -86,6 +86,16 @@ extension AppCaller: ViewControllerPresentation {
         viewController.modalPresentationStyle = .fullScreen
         topController?.present(viewController, animated: true, completion: nil)
     }
+
+    func openFavorite() {
+        let storyBoard = UIStoryboard(name: "CinemoMain", bundle: nil)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: CinemoViewController.identifier) as? CinemoViewController
+
+        if let viewController = viewController {
+            viewController.viewModel = .init(type: .favorites)
+            topController?.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
 }
 
 
@@ -93,9 +103,8 @@ extension AppCaller {
     // MARK: ViewController Navigation
 
     private func topNavigationController() -> UINavigationController? {
-        let tabBar = mainViewController as? UITabBarController
-        var window = tabBar?.selectedViewController as? UINavigationController
-        if tabBar != nil, window != nil {
+        var window = mainViewController as? UINavigationController
+        if  window != nil {
             while window!.presentedViewController != nil {
                 if let current = window!.presentedViewController as? UINavigationController {
                     window = current
