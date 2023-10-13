@@ -22,7 +22,6 @@ extension UITableView {
         separatorStyle = separator
         allowsSelection = allowsRowSelection
         isScrollEnabled = true
-        showsVerticalScrollIndicator = false
     }
 
     func reloadWithoutAnimation() {

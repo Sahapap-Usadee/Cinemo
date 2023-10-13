@@ -84,7 +84,6 @@ extension CinemoViewController: UserInterface {
         tableView.register(CinemoheaderTableViewCell.self)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.scrollIndicatorInsets = tableView.contentInset
         tableView.keyboardDismissMode = .onDrag
     }
 
