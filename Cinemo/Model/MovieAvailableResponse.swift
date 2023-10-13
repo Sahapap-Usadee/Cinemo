@@ -14,6 +14,7 @@ struct MovieAvailableResponse: Codable {
 
 // MARK: - Movie
 struct MovieAvailable: Codable {
+    let id: Int
     let titleEn, titleTh: String
     let rating: String
     let releaseDate, sneakDate, synopsisTh, synopsisEn: String
@@ -23,6 +24,7 @@ struct MovieAvailable: Codable {
 
 
     enum CodingKeys: String, CodingKey {
+        case id
         case titleEn = "title_en"
         case titleTh = "title_th"
         case rating
@@ -36,6 +38,7 @@ struct MovieAvailable: Codable {
         case dateUpdate = "date_update"
     }
     init() {
+        self.id = 0
         self.titleEn = ""
         self.titleTh = ""
         self.rating = ""

@@ -14,5 +14,6 @@ struct ThemeFonts {
     var subHeader: UIFont { UIFont.boldSystemFont(ofSize: 11.0) }
     var title: UIFont { UIFont.boldSystemFont(ofSize: 14.0) }
     var dataTitle: UIFont { UIFont.systemFont(ofSize: 13.0) }
-    var body: UIFont { UIFont.boldSystemFont(ofSize: 12.0) }
+    var body: UIFont { UIFont.systemFont(ofSize: 14.0) }
+    var button: UIFont { UIFont.systemFont(ofSize: 18.0) }
 }

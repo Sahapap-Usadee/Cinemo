@@ -1,6 +1,23 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "addFavorite" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to Favorite"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพิ่ม Favorite"
+          }
+        }
+      }
+    },
     "cinemo" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -69,6 +86,23 @@
         }
       }
     },
+    "removeFavorite" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove Favorite"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบ Favorite"
+          }
+        }
+      }
+    },
     "sessionError" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -80,7 +114,7 @@
         },
         "th" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Error please try again."
           }
         }

@@ -8,6 +8,7 @@
 import UIKit
 enum CornerRadiusType {
     case roundDefault
+    case roundHalf
     case none
 }
 
@@ -24,14 +25,15 @@ extension UIView {
         }
 
         setCornerRadius(type: roundType)
-        self.clipsToBounds = clipsToBounds
     }
 
 
     func setCornerRadius(type: CornerRadiusType) {
         switch type {
         case .roundDefault:
-            layer.cornerRadius = 5
+            layer.cornerRadius = 8
+        case .roundHalf:
+            layer.cornerRadius = frame.height / 2
         case .none: break
         }
     }

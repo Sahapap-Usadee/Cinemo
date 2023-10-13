@@ -42,6 +42,18 @@ extension CinemoMainViewModel: Logic {
         dataModel?.movies ?? []
     }
 
+    func getMovieDetail(row: Int) -> CinemoDetailModel {
+        guard let data = dataModel?.movies[row]  else { return CinemoDetailModel() }
+        var model: CinemoDetailModel =  .init()
+        switch Constants.Language.Key(rawValue: Localize.currentLanguage()) {
+        case .thai:
+            model = CinemoDetailModel(id: data.id, title: data.titleTh, synopsis: data.synopsisTh, genre: data.genre, posterURL: data.posterURL)
+        default:
+            model = CinemoDetailModel(id: data.id, title: data.titleEn, synopsis: data.synopsisEn, genre: data.genre, posterURL: data.posterURL)
+        }
+        return model
+    }
+
     func getModelMovie(row: Int) -> CinemoCellModel {
         guard let data = dataModel?.movies[row]  else { return CinemoCellModel() }
         var model: CinemoCellModel =  .init()

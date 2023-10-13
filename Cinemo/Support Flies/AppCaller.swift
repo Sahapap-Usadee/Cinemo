@@ -80,6 +80,12 @@ extension AppCaller: AlertPresentation {
 // MARK: ViewControllerPresentation
 
 extension AppCaller: ViewControllerPresentation {
+    func openCinemoDetail(data: CinemoDetailModel) {
+        let model = CinemoDetailViewModel(data: data)
+        let viewController = CinemoDetailViewController(viewModel: model)
+        viewController.modalPresentationStyle = .fullScreen
+        topController?.present(viewController, animated: true, completion: nil)
+    }
 }
 
 

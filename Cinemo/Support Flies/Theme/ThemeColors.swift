@@ -60,4 +60,11 @@ struct ThemeColors {
         default: return UIColor(hex: "#9F9FA7")
         }
     }
+
+    var favorite: UIColor {
+        switch theme {
+        case .defaultTheme: return UIColor(hex: "#F21F81")
+        default: return UIColor(hex: "#F21F81")
+        }
+    }
 }

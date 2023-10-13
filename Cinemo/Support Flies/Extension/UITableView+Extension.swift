@@ -25,6 +25,15 @@ extension UITableView {
         showsVerticalScrollIndicator = false
     }
 
+    func reloadWithoutAnimation() {
+        UIView.performWithoutAnimation {
+            DispatchQueue.main.async {
+                self.reloadData()
+                self.layoutIfNeeded()
+            }
+        }
+    }
+
     func register<Cell: UITableViewCell>(_ cellType: Cell.Type) {
         let className = String(describing: cellType)
         let nib = UINib(nibName: className, bundle: Bundle(for: cellType.self))

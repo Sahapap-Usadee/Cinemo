@@ -15,8 +15,8 @@ struct Constants {
 
     enum Button {
         static let ok = "ok"
-        static let cancel = "cancel"
-        static let confirm = "confirm"
+        static let addFavorite = "addFavorite"
+        static let removeFavorite = "removeFavorite"
     }
 
     enum Alert {

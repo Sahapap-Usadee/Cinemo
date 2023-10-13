@@ -64,7 +64,7 @@ extension CinemoMainController: Service {
 
 extension CinemoMainController: UserInterface {
     private func updateUIWithData() {
-        self.tableView.reloadData()
+        self.tableView.reloadWithoutAnimation()
     }
 
     private func handleError(_ error: Error) {
@@ -93,7 +93,8 @@ extension CinemoMainController: UserInterface {
 extension CinemoMainController: UITableViewDelegate {
     func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
         Haptic.impact(.medium).generate()
-        AppCaller().showAlert(message: "test")
+        let data = self.viewModel.getMovieDetail(row: indexPath.row)
+        AppCaller().openCinemoDetail(data: data)
     }
 }
 

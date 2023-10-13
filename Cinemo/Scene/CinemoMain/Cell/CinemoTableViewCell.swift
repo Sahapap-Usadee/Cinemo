@@ -28,6 +28,7 @@ extension CinemoTableViewCell: Themes {
     func applyTheme() {
         backgroundColor = .clear
         contentView.backgroundColor = .clear
+        selectionStyle = .none
         cardView.setThemeView(backgroundColor: themeManager.colors.card, roundType: .roundDefault)
         movieImageView.setThemeView(roundType: .roundDefault)
         titleLabels.forEach {

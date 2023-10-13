@@ -55,6 +55,11 @@
 		3D266A8A2AD955A80024C523 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A892AD955A80024C523 /* UIButton+Extension.swift */; };
 		3D266A8C2AD95AB50024C523 /* CinemoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A8B2AD95AB50024C523 /* CinemoNavigationController.swift */; };
 		3D266A8E2AD95BD80024C523 /* NavigationBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A8D2AD95BD80024C523 /* NavigationBarManager.swift */; };
+		3D266A922AD95EE30024C523 /* CinemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A902AD95EE30024C523 /* CinemoDetailViewController.swift */; };
+		3D266A932AD95EE30024C523 /* CinemoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A912AD95EE30024C523 /* CinemoDetailViewController.xib */; };
+		3D266A952AD95F610024C523 /* CinemoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A942AD95F610024C523 /* CinemoDetailViewModel.swift */; };
+		3D266A972AD960F20024C523 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A962AD960F20024C523 /* UIViewController+Extension.swift */; };
+		3D266A992AD96A5F0024C523 /* CinemoDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A982AD96A5F0024C523 /* CinemoDetailModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +127,11 @@
 		3D266A892AD955A80024C523 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		3D266A8B2AD95AB50024C523 /* CinemoNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoNavigationController.swift; sourceTree = "<group>"; };
 		3D266A8D2AD95BD80024C523 /* NavigationBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarManager.swift; sourceTree = "<group>"; };
+		3D266A902AD95EE30024C523 /* CinemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoDetailViewController.swift; sourceTree = "<group>"; };
+		3D266A912AD95EE30024C523 /* CinemoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CinemoDetailViewController.xib; sourceTree = "<group>"; };
+		3D266A942AD95F610024C523 /* CinemoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoDetailViewModel.swift; sourceTree = "<group>"; };
+		3D266A962AD960F20024C523 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		3D266A982AD96A5F0024C523 /* CinemoDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoDetailModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +247,7 @@
 				3D266A6D2AD931B30024C523 /* UITableView+Extension.swift */,
 				3D266A722AD93B740024C523 /* UIImageView+Extension.swift */,
 				3D266A892AD955A80024C523 /* UIButton+Extension.swift */,
+				3D266A962AD960F20024C523 /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -302,6 +313,7 @@
 		3D266A532AD91B950024C523 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				3D266A8F2AD95EB30024C523 /* CinemoDetail */,
 				3D266A542AD91BFB0024C523 /* CinemoMain */,
 			);
 			path = Scene;
@@ -349,6 +361,17 @@
 				3D266A8D2AD95BD80024C523 /* NavigationBarManager.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		3D266A8F2AD95EB30024C523 /* CinemoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3D266A902AD95EE30024C523 /* CinemoDetailViewController.swift */,
+				3D266A912AD95EE30024C523 /* CinemoDetailViewController.xib */,
+				3D266A942AD95F610024C523 /* CinemoDetailViewModel.swift */,
+				3D266A982AD96A5F0024C523 /* CinemoDetailModel.swift */,
+			);
+			path = CinemoDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,6 +498,7 @@
 				3D266A082AD8F6690024C523 /* LaunchScreen.storyboard in Resources */,
 				3D266A3B2AD900760024C523 /* Localizable.xcstrings in Resources */,
 				3D266A2E2AD8F9F50024C523 /* Configuration.plist in Resources */,
+				3D266A932AD95EE30024C523 /* CinemoDetailViewController.xib in Resources */,
 				3D266A052AD8F6690024C523 /* Assets.xcassets in Resources */,
 				3D266A642AD926BB0024C523 /* CinemoTableViewCell.xib in Resources */,
 				3D266A032AD8F6670024C523 /* CinemoMain.storyboard in Resources */,
@@ -525,12 +549,14 @@
 			files = (
 				3D266A8E2AD95BD80024C523 /* NavigationBarManager.swift in Sources */,
 				3D266A8A2AD955A80024C523 /* UIButton+Extension.swift in Sources */,
+				3D266A972AD960F20024C523 /* UIViewController+Extension.swift in Sources */,
 				3D266A6A2AD92DC00024C523 /* CinemoCellModel.swift in Sources */,
 				3D266A802AD9461C0024C523 /* AppCaller.swift in Sources */,
 				3D266A522AD912B80024C523 /* MovieAvailableResponse.swift in Sources */,
 				3D266A862AD953680024C523 /* CinemoNavigatorBar.swift in Sources */,
 				3D266A5A2AD922180024C523 /* ThemeColors.swift in Sources */,
 				3D266A412AD908670024C523 /* APIRouter.swift in Sources */,
+				3D266A922AD95EE30024C523 /* CinemoDetailViewController.swift in Sources */,
 				3D266A582AD921E00024C523 /* ThemeManager.swift in Sources */,
 				3D266A562AD91C9C0024C523 /* CinemoMainViewModel.swift in Sources */,
 				3D266A002AD8F6670024C523 /* CinemoMainController.swift in Sources */,
@@ -545,8 +571,10 @@
 				3D266A4F2AD90E5C0024C523 /* CinemoClient.swift in Sources */,
 				3D266A662AD92AFD0024C523 /* UIView+Extension.swift in Sources */,
 				3D266A8C2AD95AB50024C523 /* CinemoNavigationController.swift in Sources */,
+				3D266A952AD95F610024C523 /* CinemoDetailViewModel.swift in Sources */,
 				3D2669FE2AD8F6670024C523 /* SceneDelegate.swift in Sources */,
 				3D266A312AD8FB340024C523 /* CinemoAPI.swift in Sources */,
+				3D266A992AD96A5F0024C523 /* CinemoDetailModel.swift in Sources */,
 				3D266A632AD926BB0024C523 /* CinemoTableViewCell.swift in Sources */,
 				3D266A6E2AD931B30024C523 /* UITableView+Extension.swift in Sources */,
 				3D266A732AD93B740024C523 /* UIImageView+Extension.swift in Sources */,

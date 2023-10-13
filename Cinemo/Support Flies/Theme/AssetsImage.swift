@@ -11,6 +11,7 @@ import UIKit
 
 enum Assets: String {
     case heartIcon
+    case closeIcon
 
     // MARK: Internal
 
