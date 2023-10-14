@@ -9,8 +9,8 @@ import XCTest
 @testable import Cinemo
 
 final class CinemoViewControllerTests: XCTestCase {
-    var viewControllerUnderTest: CinemoViewController!
-    var sampleMovies: [MovieAvailable]!
+    var cinemoViewController: CinemoViewController!
+    var sampleMovieList: [MovieAvailable]!
 
     override func setUpWithError() throws {
         super.setUp()
@@ -21,74 +21,54 @@ final class CinemoViewControllerTests: XCTestCase {
             XCTFail("Failed to instantiate CinemoViewController from storyboard")
             return
         }
-        viewControllerUnderTest = viewController
+        cinemoViewController = viewController
 
         // Load sample movie data
         let data = try loadMockData(fileName: "MovieAvailableMock")
         let dataResponse = try JSONDecoder().decode(MovieAvailableResponse.self, from: data)
-        sampleMovies = dataResponse.movies
+        sampleMovieList = dataResponse.movies
 
         // Inject sample movie data into ViewModel
-        let viewModel = CinemoViewModel(type: .movieList, mockData: sampleMovies)
-        viewControllerUnderTest.viewModel = viewModel
+        let viewModel = CinemoViewModel(type: .movieList, mockData: sampleMovieList)
+        cinemoViewController.viewModel = viewModel
     }
 
     override func tearDownWithError() throws {
-        viewControllerUnderTest = nil
-        sampleMovies = nil
+        cinemoViewController = nil
+        sampleMovieList = nil
         super.tearDown()
     }
 
-
-    func test_ViewController_PropertiesAreInitialized() throws {
-        // Ensure view loads
-        _ = viewControllerUnderTest.view
-
-        // Check properties
-        XCTAssertNotNil(viewControllerUnderTest.searchMovieBar, "SearchMovieBar should be initialized.")
-        XCTAssertNotNil(viewControllerUnderTest.tableView, "TableView should be initialized.")
-        XCTAssertNotNil(viewControllerUnderTest.viewModel, "ViewModel should be initialized.")
+    func testViewControllerInitializesRequiredProperties() {
+        _ = cinemoViewController.view
+        XCTAssertNotNil(cinemoViewController.searchMovieBar, "SearchMovieBar should be initialized.")
+        XCTAssertNotNil(cinemoViewController.tableView, "TableView should be initialized.")
+        XCTAssertNotNil(cinemoViewController.viewModel, "ViewModel should be initialized.")
     }
 
-    func test_ViewController_LoadsSampleMovieData() throws {
-        // Ensure view loads
-        _ = viewControllerUnderTest.view
-
-        // Assuming viewModel exposes dataModel to be publicly readable
-        XCTAssertEqual(viewControllerUnderTest.viewModel.dataModel?.count, sampleMovies.count, "Loaded movie data should match sample data count.")
+    func testViewModelLoadsSampleMovies() {
+        _ = cinemoViewController.view
+        XCTAssertEqual(cinemoViewController.viewModel.dataModel?.count, sampleMovieList.count, "Loaded movie data should match sample data count.")
     }
 
-    func test_ViewController_FetchMovieDetails() throws {
-        // Fetch movie details for the first movie
-        let movieDetails = viewControllerUnderTest.viewModel.getMovieDetail(row: 0)
-
-        // Check the details
+    func testViewModelFetchesCorrectMovieDetail() {
+        let movieDetails = cinemoViewController.viewModel.getMovieDetail(row: 0)
         XCTAssertEqual(movieDetails.title, "Mock Movie", "Movie title should match sample data.")
         XCTAssertEqual(movieDetails.genre, "Mock Genre", "Movie genre should match sample data.")
     }
 
-    func test_ViewModel_FiltersMoviesByTitle() throws {
-        // Given
+    func testViewModelFiltersMoviesByTitleSuccessfully() {
         let searchText = "hello"
-
-        // When
-        viewControllerUnderTest.viewModel.search(for: searchText)
-        let filteredMovies = viewControllerUnderTest.viewModel.dataModel
-
-        // Then
+        cinemoViewController.viewModel.search(for: searchText)
+        let filteredMovies = cinemoViewController.viewModel.dataModel
         XCTAssertEqual(filteredMovies?.count, 1, "Only one movie should match the search text.")
         XCTAssertEqual(filteredMovies?.first?.titleEn, searchText, "The title of the filtered movie should match the search text.")
     }
 
-    func test_ViewModel_FiltersFavoriteMovies() throws {
-        // Given
+    func testViewModelFiltersFavoriteMoviesCorrectly() {
         let mockFavoriteManager = MockFavoriteMovieManager(favorites: [1, 3])
-        let viewModel = CinemoViewModel(type: .favorites, mockData: sampleMovies, mockFavoriteMovie: mockFavoriteManager)
-
-        // When
+        let viewModel = CinemoViewModel(type: .favorites, mockData: sampleMovieList, mockFavoriteMovie: mockFavoriteManager)
         let favoriteMovies = viewModel.getMovielist()
-
-        // Then
         let favoriteMovieTitles = favoriteMovies.map { $0.titleEn }
         XCTAssertEqual(favoriteMovies.count, 2, "Only two movies should be marked as favorites.")
         XCTAssertTrue(favoriteMovieTitles.contains("Mock Movie"), "Mock Movie should be a favorite.")
