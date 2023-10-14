@@ -34,7 +34,6 @@
 		3D266A582AD921E00024C523 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A572AD921E00024C523 /* ThemeManager.swift */; };
 		3D266A5A2AD922180024C523 /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A592AD922180024C523 /* ThemeColors.swift */; };
 		3D266A5C2AD922250024C523 /* ThemeFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A5B2AD922250024C523 /* ThemeFonts.swift */; };
-		3D266A5F2AD922950024C523 /* Hue in Frameworks */ = {isa = PBXBuildFile; productRef = 3D266A5E2AD922950024C523 /* Hue */; };
 		3D266A632AD926BB0024C523 /* CinemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A612AD926BB0024C523 /* CinemoTableViewCell.swift */; };
 		3D266A642AD926BB0024C523 /* CinemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A622AD926BB0024C523 /* CinemoTableViewCell.xib */; };
 		3D266A662AD92AFD0024C523 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A652AD92AFD0024C523 /* UIView+Extension.swift */; };
@@ -68,6 +67,7 @@
 		3DBC3AEE2ADA536A00CE19AE /* FavoriteManagingProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC3AE72ADA4AE700CE19AE /* FavoriteManagingProtocal.swift */; };
 		3DBC3AF12ADA540A00CE19AE /* MockFavoriteMovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC3AE22ADA499F00CE19AE /* MockFavoriteMovieManager.swift */; };
 		3DBC3AF42ADA5A4F00CE19AE /* CinemoDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC3AF32ADA5A4F00CE19AE /* CinemoDetailViewControllerTests.swift */; };
+		3DBC3AF62ADA65CA00CE19AE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC3AF52ADA65CA00CE19AE /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +148,7 @@
 		3DBC3AE22ADA499F00CE19AE /* MockFavoriteMovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFavoriteMovieManager.swift; sourceTree = "<group>"; };
 		3DBC3AE72ADA4AE700CE19AE /* FavoriteManagingProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManagingProtocal.swift; sourceTree = "<group>"; };
 		3DBC3AF32ADA5A4F00CE19AE /* CinemoDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		3DBC3AF52ADA65CA00CE19AE /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +157,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D266A712AD93B440024C523 /* Kingfisher in Frameworks */,
-				3D266A5F2AD922950024C523 /* Hue in Frameworks */,
 				3D266A3E2AD903C40024C523 /* Localize_Swift in Frameworks */,
 				3D266A832AD948C00024C523 /* Haptica in Frameworks */,
 				3D266A442AD908960024C523 /* Alamofire in Frameworks */,
@@ -270,6 +270,7 @@
 				3D266A962AD960F20024C523 /* UIViewController+Extension.swift */,
 				3D266A9C2AD990990024C523 /* UISearchBar+Extension.swift */,
 				3D266A9E2AD996C10024C523 /* Formatter+Extension.swift */,
+				3DBC3AF52ADA65CA00CE19AE /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -450,7 +451,6 @@
 			packageProductDependencies = (
 				3D266A3D2AD903C40024C523 /* Localize_Swift */,
 				3D266A432AD908960024C523 /* Alamofire */,
-				3D266A5E2AD922950024C523 /* Hue */,
 				3D266A702AD93B440024C523 /* Kingfisher */,
 				3D266A822AD948C00024C523 /* Haptica */,
 			);
@@ -530,7 +530,6 @@
 			packageReferences = (
 				3D266A3C2AD903C40024C523 /* XCRemoteSwiftPackageReference "Localize-Swift" */,
 				3D266A422AD908960024C523 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				3D266A5D2AD922950024C523 /* XCRemoteSwiftPackageReference "Hue" */,
 				3D266A6F2AD93B440024C523 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				3D266A812AD948C00024C523 /* XCRemoteSwiftPackageReference "Haptica" */,
 			);
@@ -620,6 +619,7 @@
 				3D266A562AD91C9C0024C523 /* CinemoViewModel.swift in Sources */,
 				3D266A002AD8F6670024C523 /* CinemoViewController.swift in Sources */,
 				3D266A462AD908C40024C523 /* Network.swift in Sources */,
+				3DBC3AF62ADA65CA00CE19AE /* UIColor+Extension.swift in Sources */,
 				3D266A4A2AD90A9C0024C523 /* APIClient.swift in Sources */,
 				3D266A342AD8FBD10024C523 /* Bundle+Extension.swift in Sources */,
 				3D2669FC2AD8F6670024C523 /* AppDelegate.swift in Sources */,
@@ -1027,14 +1027,6 @@
 				minimumVersion = 5.8.0;
 			};
 		};
-		3D266A5D2AD922950024C523 /* XCRemoteSwiftPackageReference "Hue" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/zenangst/Hue";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
-			};
-		};
 		3D266A6F2AD93B440024C523 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
@@ -1063,11 +1055,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3D266A422AD908960024C523 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		3D266A5E2AD922950024C523 /* Hue */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3D266A5D2AD922950024C523 /* XCRemoteSwiftPackageReference "Hue" */;
-			productName = Hue;
 		};
 		3D266A702AD93B440024C523 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
