@@ -16,8 +16,9 @@ class CinemoViewModel {
     // Outputs for the View
     @Published private(set) var dataModel: [MovieAvailable]?
     @Published private(set) var error: Error?
+    private var favoriteMovieManager: FavoriteManaging
     private var currentSearchText: String?
-    private var allMovies: [MovieAvailable] = [] // to store all movies
+    private var allMovies: [MovieAvailable]
     var cancellables = Set<AnyCancellable>()
     enum Section {
         case movieList
@@ -25,9 +26,19 @@ class CinemoViewModel {
     }
     let sectionList: [Section]
     let viewType: CinemoViewType
-    init(type: CinemoViewType = .movieList) {
+    init(type: CinemoViewType = .movieList, favoriteMovieManager: FavoriteManaging = FavoriteMovieManager.shared) {
         sectionList = [.movieList]
         self.viewType = type
+        self.allMovies = []
+        self.favoriteMovieManager = favoriteMovieManager
+    }
+
+    init(type: CinemoViewType = .movieList, mockData: [MovieAvailable]? = nil, mockFavoriteMovie: FavoriteManaging = FavoriteMovieManager.shared) {
+        self.viewType = type
+        self.sectionList = [.movieList]
+        self.allMovies = mockData ?? []
+        self.dataModel = mockData
+        self.favoriteMovieManager = mockFavoriteMovie
     }
 }
 
@@ -55,7 +66,7 @@ extension CinemoViewModel: Logic {
         case .movieList:
             return dataModel ?? []
         case .favorites:
-            let favoriteIDs = FavoriteMovieManager.shared.getAllFavorites()
+            let favoriteIDs = favoriteMovieManager.getAllFavorites()
             return dataModel?.filter { favoriteIDs.contains($0.id) } ?? []
         }
     }

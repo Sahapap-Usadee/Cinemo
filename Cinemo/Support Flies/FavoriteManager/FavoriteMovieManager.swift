@@ -6,7 +6,8 @@
 //
 
 import Foundation
-class FavoriteMovieManager {
+
+class FavoriteMovieManager: FavoriteManaging {
     static let shared = FavoriteMovieManager()
 
     private init() {}
@@ -22,7 +23,8 @@ class FavoriteMovieManager {
         }
     }
 }
-extension FavoriteMovieManager: Logic {
+
+extension FavoriteMovieManager {
     // Add movie ID to favorites
     func addFavorite(movieID: Int) {
         var currentFavorites = favorites

@@ -13,7 +13,7 @@
 		3D266A032AD8F6670024C523 /* CinemoMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A012AD8F6670024C523 /* CinemoMain.storyboard */; };
 		3D266A052AD8F6690024C523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A042AD8F6690024C523 /* Assets.xcassets */; };
 		3D266A082AD8F6690024C523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A062AD8F6690024C523 /* LaunchScreen.storyboard */; };
-		3D266A132AD8F6690024C523 /* CinemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A122AD8F6690024C523 /* CinemoTests.swift */; };
+		3D266A132AD8F6690024C523 /* CinemoViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A122AD8F6690024C523 /* CinemoViewControllerTests.swift */; };
 		3D266A1D2AD8F6690024C523 /* CinemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A1C2AD8F6690024C523 /* CinemoUITests.swift */; };
 		3D266A1F2AD8F6690024C523 /* CinemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A1E2AD8F6690024C523 /* CinemoUITestsLaunchTests.swift */; };
 		3D266A2E2AD8F9F50024C523 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D266A2D2AD8F9F50024C523 /* Configuration.plist */; };
@@ -63,6 +63,10 @@
 		3D266A9B2AD976A20024C523 /* FavoriteMovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A9A2AD976A20024C523 /* FavoriteMovieManager.swift */; };
 		3D266A9D2AD990990024C523 /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A9C2AD990990024C523 /* UISearchBar+Extension.swift */; };
 		3D266A9F2AD996C10024C523 /* Formatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D266A9E2AD996C10024C523 /* Formatter+Extension.swift */; };
+		3DBC3ADE2ADA3ACA00CE19AE /* XCTest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC3ADD2ADA3ACA00CE19AE /* XCTest+Extension.swift */; };
+		3DBC3AE12ADA3DE500CE19AE /* MovieAvailableMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC3AE02ADA3DE500CE19AE /* MovieAvailableMock.json */; };
+		3DBC3AEE2ADA536A00CE19AE /* FavoriteManagingProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC3AE72ADA4AE700CE19AE /* FavoriteManagingProtocal.swift */; };
+		3DBC3AF12ADA540A00CE19AE /* MockFavoriteMovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC3AE22ADA499F00CE19AE /* MockFavoriteMovieManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +96,7 @@
 		3D266A072AD8F6690024C523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D266A092AD8F6690024C523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D266A0E2AD8F6690024C523 /* CinemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D266A122AD8F6690024C523 /* CinemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoTests.swift; sourceTree = "<group>"; };
+		3D266A122AD8F6690024C523 /* CinemoViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoViewControllerTests.swift; sourceTree = "<group>"; };
 		3D266A182AD8F6690024C523 /* CinemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D266A1C2AD8F6690024C523 /* CinemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoUITests.swift; sourceTree = "<group>"; };
 		3D266A1E2AD8F6690024C523 /* CinemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -138,6 +142,10 @@
 		3D266A9A2AD976A20024C523 /* FavoriteMovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMovieManager.swift; sourceTree = "<group>"; };
 		3D266A9C2AD990990024C523 /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extension.swift"; sourceTree = "<group>"; };
 		3D266A9E2AD996C10024C523 /* Formatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+Extension.swift"; sourceTree = "<group>"; };
+		3DBC3ADD2ADA3ACA00CE19AE /* XCTest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Extension.swift"; sourceTree = "<group>"; };
+		3DBC3AE02ADA3DE500CE19AE /* MovieAvailableMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MovieAvailableMock.json; sourceTree = "<group>"; };
+		3DBC3AE22ADA499F00CE19AE /* MockFavoriteMovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFavoriteMovieManager.swift; sourceTree = "<group>"; };
+		3DBC3AE72ADA4AE700CE19AE /* FavoriteManagingProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManagingProtocal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				3D2669FA2AD8F6670024C523 /* Cinemo */,
-				3D266A112AD8F6690024C523 /* CinemoTests */,
+				3D266A112AD8F6690024C523 /* UnitTests */,
 				3D266A1B2AD8F6690024C523 /* CinemoUITests */,
 				3D2669F92AD8F6670024C523 /* Products */,
 			);
@@ -204,12 +212,14 @@
 			path = Cinemo;
 			sourceTree = "<group>";
 		};
-		3D266A112AD8F6690024C523 /* CinemoTests */ = {
+		3D266A112AD8F6690024C523 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				3D266A122AD8F6690024C523 /* CinemoTests.swift */,
+				3DBC3ADF2ADA3DB300CE19AE /* MockJSON */,
+				3DBC3ADC2ADA3A9E00CE19AE /* Extension */,
+				3D266A122AD8F6690024C523 /* CinemoViewControllerTests.swift */,
 			);
-			path = CinemoTests;
+			path = UnitTests;
 			sourceTree = "<group>";
 		};
 		3D266A1B2AD8F6690024C523 /* CinemoUITests */ = {
@@ -229,8 +239,8 @@
 				3D266AA02AD999680024C523 /* Assets */,
 				3D266A322AD8FBB50024C523 /* Extension */,
 				3D266A382AD8FF280024C523 /* Plist */,
+				3DBC3AE52ADA4A3500CE19AE /* FavoriteManager */,
 				3D266A7F2AD9461C0024C523 /* AppCaller.swift */,
-				3D266A9A2AD976A20024C523 /* FavoriteMovieManager.swift */,
 			);
 			path = "Support Flies";
 			sourceTree = "<group>";
@@ -391,6 +401,32 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		3DBC3ADC2ADA3A9E00CE19AE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3DBC3ADD2ADA3ACA00CE19AE /* XCTest+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3DBC3ADF2ADA3DB300CE19AE /* MockJSON */ = {
+			isa = PBXGroup;
+			children = (
+				3DBC3AE02ADA3DE500CE19AE /* MovieAvailableMock.json */,
+			);
+			path = MockJSON;
+			sourceTree = "<group>";
+		};
+		3DBC3AE52ADA4A3500CE19AE /* FavoriteManager */ = {
+			isa = PBXGroup;
+			children = (
+				3DBC3AE22ADA499F00CE19AE /* MockFavoriteMovieManager.swift */,
+				3D266A9A2AD976A20024C523 /* FavoriteMovieManager.swift */,
+				3DBC3AE72ADA4AE700CE19AE /* FavoriteManagingProtocal.swift */,
+			);
+			path = FavoriteManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -526,6 +562,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBC3AE12ADA3DE500CE19AE /* MovieAvailableMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +611,7 @@
 				3D266A862AD953680024C523 /* CinemoNavigatorBar.swift in Sources */,
 				3D266A5A2AD922180024C523 /* ThemeColors.swift in Sources */,
 				3D266A412AD908670024C523 /* APIRouter.swift in Sources */,
+				3DBC3AEE2ADA536A00CE19AE /* FavoriteManagingProtocal.swift in Sources */,
 				3D266A922AD95EE30024C523 /* CinemoDetailViewController.swift in Sources */,
 				3D266A582AD921E00024C523 /* ThemeManager.swift in Sources */,
 				3D266A562AD91C9C0024C523 /* CinemoViewModel.swift in Sources */,
@@ -583,6 +621,7 @@
 				3D266A342AD8FBD10024C523 /* Bundle+Extension.swift in Sources */,
 				3D2669FC2AD8F6670024C523 /* AppDelegate.swift in Sources */,
 				3D266A4D2AD90B800024C523 /* CinemoRouter.swift in Sources */,
+				3DBC3AF12ADA540A00CE19AE /* MockFavoriteMovieManager.swift in Sources */,
 				3D266A882AD955640024C523 /* AssetsImage.swift in Sources */,
 				3D266A7A2AD941A40024C523 /* CinemoHeaderCellViewModel.swift in Sources */,
 				3D266A7C2AD941E80024C523 /* CinemoHeaderCellModel.swift in Sources */,
@@ -611,7 +650,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D266A132AD8F6690024C523 /* CinemoTests.swift in Sources */,
+				3DBC3ADE2ADA3ACA00CE19AE /* XCTest+Extension.swift in Sources */,
+				3D266A132AD8F6690024C523 /* CinemoViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,6 +858,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cinemo/Support Flies/Plist/Info.plist";
