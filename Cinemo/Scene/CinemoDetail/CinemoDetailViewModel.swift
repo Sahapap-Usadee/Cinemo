@@ -12,11 +12,12 @@ class CinemoDetailViewModel {
     @Published private(set) var dataModel: CinemoDetailModel
     @Published private(set) var isFavorite: Bool
     var cancellables = Set<AnyCancellable>()
-    private let favoriteManager = FavoriteMovieManager.shared
+    private let favoriteManager: FavoriteManaging
 
-    init(data: CinemoDetailModel) {
+    init(data: CinemoDetailModel, favoriteManager: FavoriteManaging = FavoriteMovieManager.shared) {
         self.dataModel = data
         self.isFavorite = favoriteManager.isFavorite(movieID: data.id)
+        self.favoriteManager = favoriteManager
     }
 }
 

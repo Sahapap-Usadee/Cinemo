@@ -67,6 +67,7 @@
 		3DBC3AE12ADA3DE500CE19AE /* MovieAvailableMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC3AE02ADA3DE500CE19AE /* MovieAvailableMock.json */; };
 		3DBC3AEE2ADA536A00CE19AE /* FavoriteManagingProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC3AE72ADA4AE700CE19AE /* FavoriteManagingProtocal.swift */; };
 		3DBC3AF12ADA540A00CE19AE /* MockFavoriteMovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC3AE22ADA499F00CE19AE /* MockFavoriteMovieManager.swift */; };
+		3DBC3AF42ADA5A4F00CE19AE /* CinemoDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC3AF32ADA5A4F00CE19AE /* CinemoDetailViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,7 @@
 		3DBC3AE02ADA3DE500CE19AE /* MovieAvailableMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MovieAvailableMock.json; sourceTree = "<group>"; };
 		3DBC3AE22ADA499F00CE19AE /* MockFavoriteMovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFavoriteMovieManager.swift; sourceTree = "<group>"; };
 		3DBC3AE72ADA4AE700CE19AE /* FavoriteManagingProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManagingProtocal.swift; sourceTree = "<group>"; };
+		3DBC3AF32ADA5A4F00CE19AE /* CinemoDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemoDetailViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 				3DBC3ADF2ADA3DB300CE19AE /* MockJSON */,
 				3DBC3ADC2ADA3A9E00CE19AE /* Extension */,
 				3D266A122AD8F6690024C523 /* CinemoViewControllerTests.swift */,
+				3DBC3AF32ADA5A4F00CE19AE /* CinemoDetailViewControllerTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -651,6 +654,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DBC3ADE2ADA3ACA00CE19AE /* XCTest+Extension.swift in Sources */,
+				3DBC3AF42ADA5A4F00CE19AE /* CinemoDetailViewControllerTests.swift in Sources */,
 				3D266A132AD8F6690024C523 /* CinemoViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
