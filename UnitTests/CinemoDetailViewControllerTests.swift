@@ -28,4 +28,15 @@ final class CinemoDetailViewControllerTests: XCTestCase {
         viewModel.toggleFavorite()
         XCTAssertEqual(viewModel.isFavorite, false)
     }
+
+    func testDataWhenSetViewModel() {
+        let expectation = XCTestExpectation(description: "Wait for UI Updates")
+        DispatchQueue.main.async {
+            XCTAssertEqual(self.viewController.titleLabels[0].text, "Mock Genre")
+            XCTAssertEqual(self.viewController.titleLabels[1].text, "Mock Movie")
+            XCTAssertEqual(self.viewController.titleLabels[2].text, "Mock Synopsis")
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 1.0)
+    }
 }
