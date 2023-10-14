@@ -11,7 +11,7 @@ import Haptica
 
 class CinemoNavigationController: UINavigationController {
     // MARK: Lifecycle
-
+    private let themeManager = ThemeManager.shared.currentTheme
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
@@ -63,8 +63,16 @@ extension CinemoNavigationController: CinemoNavigatorBarDelegate {
     }
 }
 
-extension UINavigationController {
+extension CinemoNavigationController {
     func setTitle(title: String) {
-        topViewController?.navigationItem.title = title
+        let titleLabel = UILabel()
+        titleLabel.text = title
+        titleLabel.textAlignment = .left
+        titleLabel.textColor = themeManager.colors.titleOnTint
+        titleLabel.font = themeManager.fonts.navbar
+
+        // Setting the frame
+        titleLabel.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 40)
+        topViewController?.navigationItem.titleView = titleLabel
     }
 }
