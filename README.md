@@ -28,7 +28,7 @@ Immerse yourself in the world of movies with Cinemo, detailed movie insights, an
 Kickstart your cinematic experience:
 
 ```bash
-git clone https://github.com/Sahapap-Usadee/Cinemo.git
+https://github.com/Sahapap-Usadee/Cinemo.git
 ```
 
 Spin it up and immerse yourself in movies.
