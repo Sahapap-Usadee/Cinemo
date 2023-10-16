@@ -25,10 +25,10 @@ Build and run the project in your preferred environment.
 
 ## Visuals
 
-*Upcoming: Captivating screenshots from our app's movie discovery, insights, and favorites sections.*
+*Captivating screenshots from our app's movie discovery, insights, and favorites sections.*
 <img src="https://github.com/Sahapap-Usadee/Cinemo/assets/56621744/7daed75d-edee-4fe8-83e1-63d22d0b6b48" alt="DiscoverMovies" width="300"/>
-![In-DepthMovieInsights](https://github.com/Sahapap-Usadee/Cinemo/assets/56621744/135037fc-9e1a-4519-9241-3ab31ee94d8b)
-![PersonalFavoritesTracker](https://github.com/Sahapap-Usadee/Cinemo/assets/56621744/31d0c8ca-635e-4026-b4a7-7071cb3f370c)
+<img src="https://github.com/Sahapap-Usadee/Cinemo/assets/56621744/135037fc-9e1a-4519-9241-3ab31ee94d8b" alt="In-DepthMovieInsights" width="300"/>
+<img src="https://github.com/Sahapap-Usadee/Cinemo/assets/56621744/31d0c8ca-635e-4026-b4a7-7071cb3f370c" alt="PersonalFavoritesTracker" width="300"/>
 
 ## Acknowledgments
 
