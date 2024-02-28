@@ -21,7 +21,7 @@ extension APIRouter {
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         request.allHTTPHeaderFields = headers
-
+ 
         if let parameters = parameters, method == .post {
             if headers[HTTPHeaderField.contentType.rawValue] == ContentType.json.rawValue {
                 request.httpBody = CinemoAPI.shared.json(from: parameters)
